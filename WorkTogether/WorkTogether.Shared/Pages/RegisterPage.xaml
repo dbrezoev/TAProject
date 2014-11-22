@@ -1,0 +1,66 @@
+﻿<Page
+    x:Class="WorkTogether.Pages.RegisterPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WorkTogether.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="MY APPLICATION" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Text="page title" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" />
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Потребител"
+                       Style="{StaticResource loginPageTextBlock}"
+                       Grid.Row="0"/>
+            <TextBox Name="username"                      
+                     Grid.Row="1"/>
+            <TextBlock Text="Парола"
+                       Style="{StaticResource loginPageTextBlock}"
+                       Grid.Row="2"/>
+            <PasswordBox Name="password" 
+                         Password="{Binding User.Password}"
+                         Grid.Row="3"/>
+            <TextBlock Text="Телефонен номер"
+                       Style="{StaticResource loginPageTextBlock}"                      
+                       Grid.Row="4"/>            
+            <TextBox Name="telephoneNumber"                     
+                     InputScope="Number"
+                    Grid.Row="5"/>
+            <Button Content="Регистрирай се"
+                    Click="OnRegisterButtonClick"
+                    HorizontalAlignment="Center"
+                    Grid.Row="6"/>
+
+        </Grid>
+    </Grid>
+</Page>
