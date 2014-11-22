@@ -5,11 +5,11 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkTogether", "WorkTogether", "{4D30D13C-0C15-4E61-9E1E-D8E97411273F}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WorkTogether.Shared", "WorkTogether\WorkTogether.Shared\WorkTogether.Shared.shproj", "{3F7D2F50-D293-4E1C-9278-8F61AF561B15}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkTogether.Windows", "WorkTogether\WorkTogether.Windows\WorkTogether.Windows.csproj", "{19DF66F6-CE0E-4D1B-A4D3-E4E87EE39D11}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkTogether.WindowsPhone", "WorkTogether\WorkTogether.WindowsPhone\WorkTogether.WindowsPhone.csproj", "{A85BF1EB-6750-4665-8F5D-712A0E72518A}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WorkTogether.Shared", "WorkTogether\WorkTogether.Shared\WorkTogether.Shared.shproj", "{3F7D2F50-D293-4E1C-9278-8F61AF561B15}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -77,8 +77,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{3F7D2F50-D293-4E1C-9278-8F61AF561B15} = {4D30D13C-0C15-4E61-9E1E-D8E97411273F}
 		{19DF66F6-CE0E-4D1B-A4D3-E4E87EE39D11} = {4D30D13C-0C15-4E61-9E1E-D8E97411273F}
 		{A85BF1EB-6750-4665-8F5D-712A0E72518A} = {4D30D13C-0C15-4E61-9E1E-D8E97411273F}
+		{3F7D2F50-D293-4E1C-9278-8F61AF561B15} = {4D30D13C-0C15-4E61-9E1E-D8E97411273F}
 	EndGlobalSection
 EndGlobal

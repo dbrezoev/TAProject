@@ -128,5 +128,10 @@ namespace WorkTogether.Pages
         }
 
         #endregion
+
+        private void OnSaveContactButtonClick(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

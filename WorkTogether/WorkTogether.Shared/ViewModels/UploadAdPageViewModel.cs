@@ -13,6 +13,7 @@ namespace WorkTogether.ViewModels
         private string description;
         private string town;
         private DateTime dateOfEvent;
+
         public UploadAdPageViewModel()
         {
         }
@@ -56,15 +57,19 @@ namespace WorkTogether.ViewModels
             }
         }
 
+       
+
         public DateTime DateOfEvent
         {
             get
             {
-                return this.dateOfEvent;
+                return this.dateOfEvent.Date.AddYears(DateTime.Now.Year-1).AddMonths(DateTime.Now.Month-1).AddDays(DateTime.Now.Day-1).AddHours(DateTime.Now.Hour);
             }
             set
             {
+
                 this.dateOfEvent = value;
+                var a = 5;
                 this.RaisePropertyChanged(() => this.DateOfEvent);
             }
         }
@@ -79,7 +84,7 @@ namespace WorkTogether.ViewModels
             newAd["CreatorId"] = ParseUser.CurrentUser.ObjectId;
             newAd["PhoneNumber"] = ParseUser.CurrentUser["PhoneNumber"].ToString();
             newAd["Name"] = ParseUser.CurrentUser.Username;
-
+            var a = 9;
             await newAd.SaveAsync();
         }
     }

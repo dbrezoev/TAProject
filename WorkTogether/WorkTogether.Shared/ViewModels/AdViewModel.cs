@@ -15,12 +15,10 @@ namespace WorkTogether.ViewModels
         private string content;
         private string town;
         private string creatorId;
-        private DateTime dateOfEvent;
-        private ParseUser creator;
-        private string phoneNumber;
-        private string userName;
+        private DateTime dateOfEvent;                
         private string name;
         private string phone;
+
         public static Expression<Func<AdModel, AdViewModel>> FromModel
         {
             get
@@ -31,29 +29,12 @@ namespace WorkTogether.ViewModels
                     Content = model.Content,
                     CreatorId = model.Creator,
                     Name = model.Name,
-                    //UserName = model.UserName,
-                    Phone = model.PhoneNumber,
-                    //Creator = model.Creator,
+                    Phone = model.PhoneNumber,                    
                     Town = model.Town,
                     DateOfEvent = model.DateOfEvent,                    
                 };              
             }
-        }
-
-        //public string CreatorName
-        //{
-        //    get
-        //    {
-        //        return this.GetUserName().Result;
-        //    }
-        //}
-
-        //private async Task<string> GetUserName()
-        //{
-        //    var user = await ParseUser.Query.GetAsync(this.CreatorId);
-
-        //    return user.Username;
-        //}
+        }        
 
         public string Title
         {
@@ -92,20 +73,7 @@ namespace WorkTogether.ViewModels
                 this.town = value;
                 this.RaisePropertyChanged(() => this.Town);
             }
-        }
-
-        //public ParseUser Creator
-        //{
-        //    get
-        //    {
-        //        return this.creator;
-        //    }
-        //    set
-        //    {
-        //        this.creator = value;
-        //        this.RaisePropertyChanged(() => this.Creator);
-        //    }
-        //}
+        }        
 
         public string CreatorId {
             get

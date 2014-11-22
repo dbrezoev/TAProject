@@ -35,7 +35,8 @@
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
-            </Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>            
                 <TextBlock Grid.Row="0"
                            Style="{StaticResource loginPageTextBlock}"
                             Text="{Binding Ad.Title}"/>
@@ -50,7 +51,16 @@
                            Text="{Binding Ad.Town}"/>
             <TextBlock Grid.Row="4"
                        Style="{StaticResource loginPageTextBlock}"
-                       Text="{Binding CreatorName}"/>
+                       HorizontalAlignment="Left"
+                       Text="{Binding Ad.Name}"/>
+            <TextBlock Grid.Row="4"
+                       HorizontalAlignment="Right"
+                       Style="{StaticResource loginPageTextBlock}"
+                       Text="{Binding Ad.Phone}"/>
+            <Button x:ConnectionId='1' Content="Save"
+                    Grid.Row="5"
+                    HorizontalAlignment="Center"
+                                                    />
         </Grid>
     </Grid>
 </Page>

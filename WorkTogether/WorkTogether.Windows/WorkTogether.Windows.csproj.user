@@ -4,6 +4,6 @@
     <UseSimulator>true</UseSimulator>
   </PropertyGroup>
   <PropertyGroup>
-    <ProjectView>ShowAllFiles</ProjectView>
+    <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
 </Project>

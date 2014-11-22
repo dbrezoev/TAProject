@@ -23,5 +23,10 @@ namespace WorkTogether.ViewModels
                 this.RaisePropertyChanged(() => this.Ad);
             }
         }
+
+        public void SaveContact()
+        {
+            //var contacts = Windows.Storage.KnownFolders.Con
+        }
     }
 }
