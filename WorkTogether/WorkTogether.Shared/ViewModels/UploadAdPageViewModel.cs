@@ -76,7 +76,9 @@ namespace WorkTogether.ViewModels
             newAd["Content"] = this.Description;
             newAd["DateOfEvent"] = this.DateOfEvent;
             newAd["Town"] = this.Town;
-            newAd["Creator"] = ParseUser.CurrentUser;
+            newAd["CreatorId"] = ParseUser.CurrentUser.ObjectId;
+            newAd["PhoneNumber"] = ParseUser.CurrentUser["PhoneNumber"].ToString();
+            newAd["Name"] = ParseUser.CurrentUser.Username;
 
             await newAd.SaveAsync();
         }

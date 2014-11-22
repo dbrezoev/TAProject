@@ -86,11 +86,8 @@ D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\
 D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\Debug\Pages\UploadAdSecondPage.xaml
 D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\Debug\Pages\SearchPage.xbf
 D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\Debug\Pages\UploadAdSecondPage.xbf
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles.intermediate
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\Debug\Microsoft.Practices.ServiceLocation\Resources.resfiles
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\Debug\Microsoft.Practices.ServiceLocation\Resources.resfiles.intermediate
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\Debug\Microsoft.Practices.ServiceLocation\pri.resfiles
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\Debug\Microsoft.Practices.ServiceLocation\pri.resfiles.intermediate
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\Debug\Microsoft.Practices.ServiceLocation\priconfig.xml
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\Debug\Microsoft.Practices.ServiceLocation\priconfig.xml.intermediate
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\Debug\Pages\AdDetailsPage.xbf
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\Debug\Pages\AdDetailsPage.g.i.cs
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\Debug\Pages\AdDetailsPage.g.cs
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\Debug\Pages\AdDetailsPage.xaml
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\Debug\Pages\AdDetailsPage.xbf

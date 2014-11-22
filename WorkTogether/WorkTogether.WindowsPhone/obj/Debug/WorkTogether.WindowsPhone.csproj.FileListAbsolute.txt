@@ -86,3 +86,8 @@ D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone
 D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\Debug\Pages\SearchPage.g.cs
 D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\Debug\Pages\SearchPage.xaml
 D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\Debug\Pages\SearchPage.xbf
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\bin\Debug\Pages\AdDetailsPage.xbf
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\Debug\Pages\AdDetailsPage.g.i.cs
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\Debug\Pages\AdDetailsPage.g.cs
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\Debug\Pages\AdDetailsPage.xaml
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\Debug\Pages\AdDetailsPage.xbf

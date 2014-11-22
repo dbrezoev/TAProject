@@ -24,16 +24,17 @@ namespace WorkTogether.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class SearchPage : Page
+    public sealed partial class AdDetailsPage : Page
     {
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
-        public SearchPage()
-            :this(new SearchPageViewModel())
+        public AdDetailsPage():
+            this(new AdDetailsPageViewModel())
         {
+
         }
-        public SearchPage(SearchPageViewModel viewModel)
+        public AdDetailsPage(AdDetailsPageViewModel viewModel)
         {
             this.InitializeComponent();
 
@@ -88,11 +89,11 @@ namespace WorkTogether.Pages
         {
         }
 
-        public SearchPageViewModel ViewModel
+        public AdDetailsPageViewModel ViewModel
         {
             get
             {
-                return this.DataContext as SearchPageViewModel;
+                return this.DataContext as AdDetailsPageViewModel;
             }
             set
             {
@@ -117,6 +118,7 @@ namespace WorkTogether.Pages
         /// handlers that cannot cancel the navigation request.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            this.ViewModel.Ad = e.Parameter as AdViewModel;
             this.navigationHelper.OnNavigatedTo(e);
         }
 
@@ -126,12 +128,5 @@ namespace WorkTogether.Pages
         }
 
         #endregion
-
-        private void OnItemClick(object sender, SelectionChangedEventArgs e)
-        {
-            var itemsListView = (sender as ListView);
-            var itemSelected = itemsListView.SelectedItem;
-            this.Frame.Navigate(typeof(AdDetailsPage), itemSelected);
-        }
     }
 }

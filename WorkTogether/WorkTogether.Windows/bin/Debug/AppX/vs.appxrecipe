@@ -20,13 +20,13 @@
     <AppXManifest Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-11-21T16:56:34.711</Modified>
+      <Modified>2014-11-22T15:01:52.497</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\Debug\WorkTogether.Windows.exe">
       <PackagePath>WorkTogether.Windows.exe</PackagePath>
-      <Modified>2014-11-21T19:27:25.917</Modified>
+      <Modified>2014-11-22T15:09:27.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\packages\MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.dll">
       <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
@@ -74,23 +74,35 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2014-11-21T19:27:25.383</Modified>
+      <Modified>2014-11-22T00:40:07.268</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\Debug\Pages\AdDetailsPage.xbf">
+      <PackagePath>Pages\AdDetailsPage.xbf</PackagePath>
+      <Modified>2014-11-22T15:01:48.626</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\Debug\Pages\LoginPage.xbf">
       <PackagePath>Pages\LoginPage.xbf</PackagePath>
-      <Modified>2014-11-21T11:12:34.585</Modified>
+      <Modified>2014-11-22T10:53:56.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\Debug\Pages\MainPage.xbf">
       <PackagePath>Pages\MainPage.xbf</PackagePath>
-      <Modified>2014-11-21T19:27:25.385</Modified>
+      <Modified>2014-11-22T10:53:56.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\Debug\Pages\RegisterPage.xbf">
       <PackagePath>Pages\RegisterPage.xbf</PackagePath>
       <Modified>2014-11-21T17:02:50.312</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\Debug\Pages\SearchPage.xbf">
+      <PackagePath>Pages\SearchPage.xbf</PackagePath>
+      <Modified>2014-11-22T10:53:56.163</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\Debug\Pages\UploadAdPage.xbf">
       <PackagePath>Pages\UploadAdPage.xbf</PackagePath>
-      <Modified>2014-11-21T19:27:25.387</Modified>
+      <Modified>2014-11-22T00:40:07.269</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\Debug\Pages\UploadAdSecondPage.xbf">
+      <PackagePath>Pages\UploadAdSecondPage.xbf</PackagePath>
+      <Modified>2014-11-22T00:40:07.269</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\Debug\Views\HeaderView.xbf">
       <PackagePath>Views\HeaderView.xbf</PackagePath>
@@ -102,11 +114,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\Debug\WorkTogether.Windows.xr.xml">
       <PackagePath>WorkTogether.Windows.xr.xml</PackagePath>
-      <Modified>2014-11-21T19:27:25.193</Modified>
+      <Modified>2014-11-22T15:01:48.561</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-11-21T19:27:44.632</Modified>
+      <Modified>2014-11-22T15:01:50.115</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

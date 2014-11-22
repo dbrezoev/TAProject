@@ -29,7 +29,9 @@
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
-            <ListView ItemsSource="{Binding Ads}"
+            <ListView x:ConnectionId='1' ItemsSource="{Binding Ads}"
+                                                    
+                      SelectionMode="Single"
                       ItemTemplate="{StaticResource AdTemplate}"/>
         </Grid>
         <ProgressRing HorizontalAlignment="Left"

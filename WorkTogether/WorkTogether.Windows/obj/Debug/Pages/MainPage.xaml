@@ -37,11 +37,12 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button 
+            <Button x:ConnectionId='1' 
                     Content="Търси"
                     Grid.Column="0"
+                                           
                     HorizontalAlignment="Center"/>
-            <Button x:ConnectionId='1' Content="Качи обява"
+            <Button x:ConnectionId='2' Content="Качи обява"
                     Grid.Column="1"
                     HorizontalAlignment="Center"
                                                    />

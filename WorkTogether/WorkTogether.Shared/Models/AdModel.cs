@@ -36,11 +36,32 @@ namespace WorkTogether.Models
             set { SetProperty<string>(value); }
         }
 
-        [ParseFieldName("Creator")]
-        public ParseUser Creator
+        [ParseFieldName("CreatorId")]
+        public string Creator
         {
-            get { return GetProperty<ParseUser>(); }
-            set { SetProperty<ParseUser>(value); }
+            get { return GetProperty<string>(); }
+            set { SetProperty<string>(value); }
         }
+        // 2 new props 
+        [ParseFieldName("PhoneNumber")]
+        public string PhoneNumber
+        {
+            get { return GetProperty<string>(); }
+            set { SetProperty<string>(value); }
+        }
+
+        [ParseFieldName("Name")]
+        public string Name
+        {
+            get { return GetProperty<string>(); }
+            set { SetProperty<string>(value); }
+        }
+
+        //[ParseFieldName("Creator")]
+        //public ParseUser Creator
+        //{
+        //    get { return GetProperty<ParseUser>(); }
+        //    set { SetProperty<ParseUser>(value); }
+        //}
     }
 }
