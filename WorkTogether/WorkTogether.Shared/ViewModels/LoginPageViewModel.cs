@@ -9,6 +9,7 @@ namespace WorkTogether.ViewModels
 {
     public class LoginPageViewModel : ViewModelBase
     {
+        private bool initializing;
         public UserViewModel User { get; set; }
 
         public LoginPageViewModel()
@@ -19,14 +20,29 @@ namespace WorkTogether.ViewModels
         {
             try
             {
+                this.Initializing = true;
                 await ParseUser.LogInAsync(this.User.Username, this.User.Password);
 
                 return true;
+                this.Initializing = false;
                 //navigate to other page
             }
             catch (Exception ex)
             {
                 return false;
+            }
+        }
+
+        public bool Initializing
+        {
+            get
+            {
+                return this.initializing;
+            }
+            set
+            {
+                this.initializing = value;
+                this.RaisePropertyChanged(() => this.Initializing);
             }
         }
     }

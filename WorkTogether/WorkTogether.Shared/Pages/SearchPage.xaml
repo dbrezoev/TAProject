@@ -32,5 +32,11 @@
             <ListView ItemsSource="{Binding Ads}"
                       ItemTemplate="{StaticResource AdTemplate}"/>
         </Grid>
+        <ProgressRing HorizontalAlignment="Left"
+                      IsActive="{Binding Initializing}"
+                      Margin="185,198.833,0,0" 
+                      Grid.Row="1" 
+                      VerticalAlignment="Top"/>
+
     </Grid>
 </Page>

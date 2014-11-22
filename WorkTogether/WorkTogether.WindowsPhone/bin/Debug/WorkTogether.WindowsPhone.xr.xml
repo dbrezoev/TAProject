@@ -2,6 +2,7 @@
 <Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="Title" />
+    <RootPropertyPathName Name="Initializing" />
     <RootPropertyPathName Name="User" />
     <RootPropertyPathName Name="Password" />
     <RootPropertyPathName Name="Username" />
@@ -81,6 +82,12 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="IsActive" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="WorkTogether.Pages.LoginPage" />

@@ -54,6 +54,10 @@
                     HorizontalAlignment="Right"
                                                  
                     Grid.Row="4"/>
+            <ProgressRing HorizontalAlignment="Center"
+                          IsActive="{Binding Initializing}"
+                          Grid.Row="4"
+                          VerticalAlignment="Center"/>
         </Grid>
     </Grid>
 </Page>
