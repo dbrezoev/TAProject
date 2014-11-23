@@ -119,12 +119,14 @@ namespace WorkTogether.Pages
 
         #endregion
 
-        private void OnRegisterButtonClick(object sender, RoutedEventArgs e)
-        {
-
-            this.ViewModel.RegisterUser();            
+        private async void OnRegisterButtonClick(object sender, RoutedEventArgs e)
+        {           
+            var isRegistrationSuccessfull = await this.ViewModel.RegisterUser();
+            if (isRegistrationSuccessfull)
+            {
+                this.Frame.Navigate(typeof(UploadAdPage));
+            }
             
-            this.Frame.Navigate(typeof(UploadAdPage));
         }
 
         public RegisterPageViewModel ViewModel

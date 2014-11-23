@@ -39,24 +39,26 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock Text="Потребител"
+            <TextBlock Text="Username"
                        Style="{StaticResource loginPageTextBlock}"
                        Grid.Row="0"/>
-            <TextBox Name="username"                      
+            <TextBox Name="username"  
+                     Text="{Binding User.Username, Mode=TwoWay}"
                      Grid.Row="1"/>
-            <TextBlock Text="Парола"
+            <TextBlock Text="Password"
                        Style="{StaticResource loginPageTextBlock}"
                        Grid.Row="2"/>
             <PasswordBox Name="password" 
-                         Password="{Binding User.Password}"
+                         Password="{Binding User.Password, Mode=TwoWay}"
                          Grid.Row="3"/>
-            <TextBlock Text="Телефонен номер"
+            <TextBlock Text="Phone number"
                        Style="{StaticResource loginPageTextBlock}"                      
                        Grid.Row="4"/>            
-            <TextBox Name="telephoneNumber"                     
+            <TextBox Name="telephoneNumber" 
+                     Text="{Binding User.PhoneNumber, Mode=TwoWay}"
                      InputScope="Number"
                     Grid.Row="5"/>
-            <Button x:ConnectionId='1' Content="Регистрирай се"
+            <Button x:ConnectionId='1' Content="Register"
                                                  
                     HorizontalAlignment="Center"
                     Grid.Row="6"/>

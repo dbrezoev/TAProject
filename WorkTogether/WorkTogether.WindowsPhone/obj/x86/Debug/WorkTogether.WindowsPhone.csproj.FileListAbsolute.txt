@@ -96,11 +96,3 @@ D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone
 D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\bin\x86\Debug\Pages\FavouriteAdsPage.xbf
 D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Pages\FavouriteAdsPage.xaml
 D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Pages\FavouriteAdsPage.xbf
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles.intermediate
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Microsoft.Practices.ServiceLocation\Resources.resfiles
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Microsoft.Practices.ServiceLocation\Resources.resfiles.intermediate
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Microsoft.Practices.ServiceLocation\pri.resfiles
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Microsoft.Practices.ServiceLocation\pri.resfiles.intermediate
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Microsoft.Practices.ServiceLocation\priconfig.xml
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Microsoft.Practices.ServiceLocation\priconfig.xml.intermediate

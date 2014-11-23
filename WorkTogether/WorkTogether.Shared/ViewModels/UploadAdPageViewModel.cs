@@ -5,6 +5,8 @@ using WorkTogether.Models;
 
 using GalaSoft.MvvmLight;
 using Parse;
+using Windows.UI.Popups;
+using System.Threading.Tasks;
 
 namespace WorkTogether.ViewModels
 {
@@ -14,6 +16,15 @@ namespace WorkTogether.ViewModels
         private string description;
         private string town;
         private DateTime dateOfEvent;
+        private const string EmptyTitleMessage = "Title cannot be empty";
+        private const string EmptyDescriptionMessage = "Description cannot be empty";
+        private const string EmptyTownMessage = "Town cannot be empty";
+        private const int MinimumTitleLength = 6;
+        private const int MaximumTitleLength = 16;
+        private const int MinimumDescriptionLength = 6;
+        private const int MaximumDescriptionLength = 16;
+        private const int MinimumTownLength = 2;
+        private const int MaximumTownLength = 16;
 
         public UploadAdPageViewModel()
         {
@@ -72,17 +83,45 @@ namespace WorkTogether.ViewModels
             }
         }
 
-        public async void SendDataToDb()
+        public async Task<bool> SendDataToDb()
         {
-            ParseObject newAd = ParseObject.Create<AdModel>();
-            newAd["Title"] = this.Title;
-            newAd["Content"] = this.Description;
-            newAd["DateOfEvent"] = this.DateOfEvent;
-            newAd["Town"] = this.Town;
-            newAd["CreatorId"] = ParseUser.CurrentUser.ObjectId;
-            newAd["PhoneNumber"] = ParseUser.CurrentUser["PhoneNumber"].ToString();
-            newAd["Name"] = ParseUser.CurrentUser.Username;            
-            await newAd.SaveAsync();
+            string title = this.Title;
+            string description = this.Description;
+            DateTime dateOfEvent = this.DateOfEvent;
+            string town = this.Town;
+
+            //Validation
+            if (string.IsNullOrEmpty(title) || string.IsNullOrWhiteSpace(title))
+            {
+                var msgDialog = new MessageDialog(EmptyTitleMessage);
+                await msgDialog.ShowAsync();
+                return false;
+            }
+            else if (string.IsNullOrEmpty(description) || string.IsNullOrWhiteSpace(description))
+            {
+                var msgDialog = new MessageDialog(EmptyDescriptionMessage);
+                await msgDialog.ShowAsync();
+                return false;
+            }
+            else if (string.IsNullOrEmpty(town) || string.IsNullOrWhiteSpace(town))
+            {
+                var msgDialog = new MessageDialog(EmptyTownMessage);
+                await msgDialog.ShowAsync();
+                return false;
+            }
+            else
+            {
+                ParseObject newAd = ParseObject.Create<AdModel>();
+                newAd["Title"] = title;
+                newAd["Content"] = description;
+                newAd["DateOfEvent"] = this.DateOfEvent;
+                newAd["Town"] = town;
+                newAd["CreatorId"] = ParseUser.CurrentUser.ObjectId;
+                newAd["PhoneNumber"] = ParseUser.CurrentUser["PhoneNumber"].ToString();
+                newAd["Name"] = ParseUser.CurrentUser.Username;
+                await newAd.SaveAsync();
+                return true;
+            }
         }
     }
 }

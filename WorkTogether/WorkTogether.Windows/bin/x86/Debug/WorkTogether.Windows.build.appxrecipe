@@ -62,6 +62,9 @@
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\AdDetailsPage.xbf">
       <PackagePath>Pages\AdDetailsPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\FavouriteAdsPage.xbf">
+      <PackagePath>Pages\FavouriteAdsPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\LoginPage.xbf">
       <PackagePath>Pages\LoginPage.xbf</PackagePath>
     </AppxPackagedFile>

@@ -10,7 +10,7 @@
 
     <Grid x:Name="LayoutRoot">
 
-        <!--<Grid.ChildrenTransitions>
+        <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
             </TransitionCollection>
@@ -21,30 +21,15 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        --><!-- Title Panel --><!--
+        <!-- Title Panel -->
         <StackPanel Grid.Row="0" Margin="19,0,0,0">
             <TextBlock Text="MY APPLICATION" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
             <TextBlock Text="page title" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
-        </StackPanel>-->
+        </StackPanel>
 
         <!--TODO: Content should be placed within the following grid-->
-        <!--<Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="3*"/>
-            </Grid.RowDefinitions>
-            
-            <TextBlock Grid.Row="0"
-                       Style="{StaticResource loginPageTextBlock}"
-                       Text="Избери дата"/>
-            <DatePicker Name="DatePicker" 
-                        Grid.Row="1"/>
-            <Button Name="Create"
-                    HorizontalAlignment="Center"
-                    Content="Създай"
-                    Click="OnCreateAdButtonClick"
-                    Grid.Row="2"/>
-        </Grid>-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            <TextBlock>EHAAA</TextBlock>
+        </Grid>
     </Grid>
 </Page>

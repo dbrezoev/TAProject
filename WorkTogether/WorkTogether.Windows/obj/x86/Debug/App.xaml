@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:WorkTogether">
     <Application.Resources>
-        <x:String x:Key="AppName">Почасова работа</x:String>
+        <x:String x:Key="AppName">find a job</x:String>
         <Style x:Key="loginPageTextBlock" TargetType="TextBlock">
             <Setter Property="FontSize" Value="30"/>
             
@@ -13,6 +13,16 @@
             <StackPanel>
                 <TextBlock Text="{Binding Title}"
                            FontSize="26"/>
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="FavAdTemplate">
+            <StackPanel>
+                <TextBlock Text="{Binding Title}"
+                           FontSize="18"/>
+                <TextBlock Text="{Binding ContactName}"
+                           FontSize="18"/>
+                <TextBlock Text="{Binding ContactPhone}"
+                           FontSize="18"/>
             </StackPanel>
         </DataTemplate>
     </Application.Resources>

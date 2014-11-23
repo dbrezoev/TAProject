@@ -4,6 +4,8 @@
     <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="ContactPhone" />
+    <RootPropertyPathName Name="ContactName" />
     <RootPropertyPathName Name="Title" />
     <RootPropertyPathName Name="Ad" />
     <RootPropertyPathName Name="Phone" />
@@ -11,10 +13,12 @@
     <RootPropertyPathName Name="Town" />
     <RootPropertyPathName Name="DateOfEvent" />
     <RootPropertyPathName Name="Content" />
+    <RootPropertyPathName Name="FavAds" />
     <RootPropertyPathName Name="Initializing" />
     <RootPropertyPathName Name="User" />
     <RootPropertyPathName Name="Password" />
     <RootPropertyPathName Name="Username" />
+    <RootPropertyPathName Name="PhoneNumber" />
     <RootPropertyPathName Name="Ads" />
     <RootPropertyPathName Name="Description" />
     <RootPropertyPathName Name="TitleText" />
@@ -31,6 +35,9 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="CharacterSpacing" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Padding" />
       <RootProperty Name="Name" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
@@ -40,6 +47,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Background" />
       <RootProperty Name="Orientation" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
@@ -84,6 +92,21 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="WorkTogether.Pages.AdDetailsPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.FlipView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Child" />
+    </RootType>
+    <RootType FullName="WorkTogether.Pages.FavouriteAdsPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Text" />
       <RootProperty Name="Name" />

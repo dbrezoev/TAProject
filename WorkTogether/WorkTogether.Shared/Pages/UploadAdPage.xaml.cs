@@ -141,11 +141,17 @@ namespace WorkTogether.Pages
             }
         }
 
-        private void OnCreateAdButtonClick(object sender, RoutedEventArgs e)
+        private async void OnCreateAdButtonClick(object sender, RoutedEventArgs e)
         {
-            this.ViewModel.SendDataToDb();
+            
             //TODO:navigate somewhere
-            //this.Frame.Navigate(typeof(UploadAdSecondPage));
+            //
+            var isCorrectData = await this.ViewModel.SendDataToDb();
+            if (isCorrectData)
+            {
+                //navigate here
+                this.Frame.Navigate(typeof(UploadAdSecondPage));
+            }
         }
     }
 }
