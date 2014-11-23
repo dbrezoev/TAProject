@@ -18,6 +18,7 @@
     <RootPropertyPathName Name="User" />
     <RootPropertyPathName Name="Password" />
     <RootPropertyPathName Name="Username" />
+    <RootPropertyPathName Name="PhoneNumber" />
     <RootPropertyPathName Name="Ads" />
     <RootPropertyPathName Name="Description" />
     <RootPropertyPathName Name="TitleText" />

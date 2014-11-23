@@ -38,11 +38,11 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Button 
-                    Content="Търси"
+                    Content="Search"
                     Grid.Column="0"
                 Click="OnSearchButtonClick"
                     HorizontalAlignment="Center"/>
-            <Button Content="Качи обява"
+            <Button Content="Upload"
                     Grid.Column="1"
                     HorizontalAlignment="Center"
                     Click="OnUploadAdButtonClicked"/>

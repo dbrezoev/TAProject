@@ -31,7 +31,12 @@ namespace WorkTogether.Pages
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
-        public RegisterPage()
+        public RegisterPage():
+            this(new RegisterPageViewModel())
+        {
+
+        }
+        public RegisterPage(RegisterPageViewModel viewModel)
         {
             this.InitializeComponent();
 
@@ -39,7 +44,7 @@ namespace WorkTogether.Pages
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
 
-            this.DataContext = new RegisterPageViewModel();
+            this.ViewModel = viewModel;
         }
 
         /// <summary>
@@ -113,17 +118,31 @@ namespace WorkTogether.Pages
 
         #endregion
 
-        private async void OnRegisterButtonClick(object sender, RoutedEventArgs e)
+        private void OnRegisterButtonClick(object sender, RoutedEventArgs e)
         {
-            var user = new ParseUser();
 
-            user.Username = this.username.Text;
-            user.Password = this.password.Password;
-            user["PhoneNumber"] = this.telephoneNumber.Text;
+            this.ViewModel.RegisterUser();
+            //var user = new ParseUser();
 
-            await user.SignUpAsync();
+            //user.Username = this.username.Text;
+            //user.Password = this.password.Password;
+            //user["PhoneNumber"] = this.telephoneNumber.Text;
+
+            //await user.SignUpAsync();
             
             this.Frame.Navigate(typeof(UploadAdPage));
+        }
+
+        public RegisterPageViewModel ViewModel
+        {
+            get
+            {
+                return this.DataContext as RegisterPageViewModel;
+            }
+            set
+            {
+                this.DataContext = value;
+            }
         }
     }
 }

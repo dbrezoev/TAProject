@@ -36,21 +36,21 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock Text="Потребител"
+            <TextBlock Text="Username"
                        Style="{StaticResource loginPageTextBlock}"
                        Grid.Row="0"/>
             <TextBox Text="{Binding User.Username, Mode=TwoWay}"
                         Grid.Row="1"/>
-            <TextBlock Text="Парола"
+            <TextBlock Text="Password"
                        Style="{StaticResource loginPageTextBlock}"
                        Grid.Row="2"/>
             <PasswordBox Password="{Binding User.Password, Mode=TwoWay}"
                         Grid.Row="3"/>
-            <Button Content="Влез"
+            <Button Content="Login"
                     HorizontalAlignment="Left"
                     Click="OnLoginButtonClick"
                     Grid.Row="4"/>
-            <Button Content="Регистрация"
+            <Button Content="Register"
                     HorizontalAlignment="Right"
                     Click="OnRegisterButtonClick"
                     Grid.Row="4"/>
