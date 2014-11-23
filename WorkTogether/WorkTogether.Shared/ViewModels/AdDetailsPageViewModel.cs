@@ -41,8 +41,7 @@ namespace WorkTogether.ViewModels
 
             SQLiteAsyncConnection conn = new SQLiteAsyncConnection(dbName);
             var allArticles = await conn.QueryAsync<FavouriteAd>("SELECT * FROM FavouriteAds");
-            var count = allArticles.Count;
-            var a = 8;
+            var count = allArticles.Count;           
         }
 
         private async Task CreateDatabaseAsync()

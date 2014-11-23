@@ -29,9 +29,33 @@
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
-            <ListView ItemsSource="{Binding FavAds}"                     
+            <!--<ListView ItemsSource="{Binding FavAds}"                     
                       SelectionMode="Single"
-                      ItemTemplate="{StaticResource FavAdTemplate}"/>
+                      ItemTemplate="{StaticResource FavAdTemplate}"/>-->
+            <FlipView x:Name="FlipView" 
+                      ItemsSource="{Binding FavAds}"
+                      Width="480"
+                      Height="270" 
+                      BorderBrush="Black"
+                      BorderThickness="1">
+                <FlipView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <StackPanel Background="Goldenrod">
+                                <TextBlock Text="{Binding Title}"
+                           FontSize="18"/>
+                                <TextBlock Text="{Binding ContactName}"
+                           FontSize="18"/>
+                                <TextBlock Text="{Binding ContactPhone}"
+                           FontSize="18"/>
+                            </StackPanel>
+                            <Border Background="#A5000000" Height="80" VerticalAlignment="Bottom">
+                                <TextBlock Text="{Binding ContactPhone}" FontFamily="Segoe UI" FontSize="26.667" Foreground="#CCFFFFFF" Padding="15,20"/>
+                            </Border>
+                        </Grid>
+                    </DataTemplate>
+                </FlipView.ItemTemplate>
+            </FlipView>
         </Grid>
     </Grid>
 </Page>

@@ -34,6 +34,9 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="CharacterSpacing" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Padding" />
       <RootProperty Name="Name" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
@@ -43,6 +46,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Background" />
       <RootProperty Name="Orientation" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
@@ -87,11 +91,19 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="WorkTogether.Pages.AdDetailsPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+    <RootType FullName="Windows.UI.Xaml.Controls.FlipView">
       <RootProperty Name="ItemsSource" />
-      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
       <RootProperty Name="ItemTemplate" />
-      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Child" />
     </RootType>
     <RootType FullName="WorkTogether.Pages.FavouriteAdsPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
@@ -113,6 +125,12 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition" />
     <RootType FullName="WorkTogether.Pages.MainPage" />
     <RootType FullName="WorkTogether.Pages.RegisterPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="ItemTemplate" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
     <RootType FullName="WorkTogether.Pages.SearchPage" />
     <RootType FullName="WorkTogether.Converters.DateTimeToStringConverter" />
     <RootType FullName="WorkTogether.Views.HeaderView">
