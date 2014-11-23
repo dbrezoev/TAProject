@@ -1,9 +1,10 @@
-﻿using GalaSoft.MvvmLight;
-using Parse;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using WorkTogether.Models;
+
+using GalaSoft.MvvmLight;
+using Parse;
 
 namespace WorkTogether.ViewModels
 {
@@ -56,8 +57,6 @@ namespace WorkTogether.ViewModels
                 this.RaisePropertyChanged(() => this.Town);
             }
         }
-
-       
 
         public DateTime DateOfEvent
         {

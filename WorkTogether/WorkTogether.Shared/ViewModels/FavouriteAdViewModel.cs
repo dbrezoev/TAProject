@@ -1,8 +1,10 @@
-﻿using GalaSoft.MvvmLight;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
+
+using GalaSoft.MvvmLight;
+
 using WorkTogether.Models;
 
 namespace WorkTogether.ViewModels

@@ -1,8 +1,9 @@
-﻿using GalaSoft.MvvmLight;
-using Parse;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+
+using GalaSoft.MvvmLight;
+using Parse;
 
 namespace WorkTogether.ViewModels
 {
@@ -53,19 +54,6 @@ namespace WorkTogether.ViewModels
                 this.phoneNumber = value;
                 this.RaisePropertyChanged(() => this.PhoneNumber);
             }
-        }
-
-        //public static UserViewModel FromModel(ParseUser parseUser)
-        //{
-        //    var phoneNumber = parseUser["PhoneNumber"] as string;
-
-        //    return new UserViewModel()
-        //    {
-        //        Username = parseUser.Username,                
-        //        PhoneNumber = (parseUser["PhoneNumber"] as string),
-        //    };
-        //}
-
-        //public string PhoneNumber { get; set; }
+        }        
     }
 }

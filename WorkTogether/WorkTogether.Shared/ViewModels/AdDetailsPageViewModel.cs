@@ -1,11 +1,13 @@
-﻿using GalaSoft.MvvmLight;
-using Parse;
-using SQLite;
+﻿using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
+
+using GalaSoft.MvvmLight;
+using Parse;
+
 using WorkTogether.Models;
 
 namespace WorkTogether.ViewModels
@@ -40,8 +42,7 @@ namespace WorkTogether.ViewModels
             await AddFavouriteAdsAsync();
 
             SQLiteAsyncConnection conn = new SQLiteAsyncConnection(dbName);
-            var allArticles = await conn.QueryAsync<FavouriteAd>("SELECT * FROM FavouriteAds");
-            var count = allArticles.Count;           
+            var allArticles = await conn.QueryAsync<FavouriteAd>("SELECT * FROM FavouriteAds");                       
         }
 
         private async Task CreateDatabaseAsync()

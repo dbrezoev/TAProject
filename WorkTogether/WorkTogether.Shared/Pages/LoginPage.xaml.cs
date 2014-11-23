@@ -1,5 +1,4 @@
-﻿using WorkTogether.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -15,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using WorkTogether.Common;
 using WorkTogether.ViewModels;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
@@ -136,8 +136,7 @@ namespace WorkTogether.Pages
         private async void OnLoginButtonClick(object sender, RoutedEventArgs e)
         {
             if (this.ViewModel == null)
-            {
-                //serious error here throw exception
+            {                
                 return;
             }
 

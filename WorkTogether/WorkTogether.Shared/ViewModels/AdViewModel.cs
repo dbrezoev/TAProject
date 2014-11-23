@@ -1,10 +1,12 @@
-﻿using GalaSoft.MvvmLight;
-using Parse;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+
+using GalaSoft.MvvmLight;
+using Parse;
+
 using WorkTogether.Models;
 
 namespace WorkTogether.ViewModels

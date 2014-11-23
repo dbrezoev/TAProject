@@ -1,11 +1,13 @@
-﻿using GalaSoft.MvvmLight;
-using SQLite;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
-using WorkTogether.Models;
 using System.Linq;
+
+using GalaSoft.MvvmLight;
+using SQLite;
+
+using WorkTogether.Models;
 
 namespace WorkTogether.ViewModels
 {
@@ -23,8 +25,7 @@ namespace WorkTogether.ViewModels
         {
             SQLiteAsyncConnection conn = new SQLiteAsyncConnection(dbName);            
             var allArticles = await conn.QueryAsync<FavouriteAd>("SELECT * FROM FavouriteAds");
-            this.FavAds = allArticles.AsQueryable().Select(FavouriteAdViewModel.FromModel);
-            var a = 8;///////HERE
+            this.FavAds = allArticles.AsQueryable().Select(FavouriteAdViewModel.FromModel);            
         }
 
         public IEnumerable<FavouriteAdViewModel> FavAds

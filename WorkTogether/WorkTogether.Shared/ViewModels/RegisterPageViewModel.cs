@@ -1,8 +1,9 @@
-﻿using GalaSoft.MvvmLight;
-using Parse;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+
+using GalaSoft.MvvmLight;
+using Parse;
 
 namespace WorkTogether.ViewModels
 {

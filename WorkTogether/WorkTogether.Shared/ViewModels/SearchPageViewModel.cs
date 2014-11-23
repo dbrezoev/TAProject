@@ -1,12 +1,15 @@
-﻿using GalaSoft.MvvmLight;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+using GalaSoft.MvvmLight;
 using Parse;
+
 using WorkTogether.Models;
-using System.Linq;
+
 namespace WorkTogether.ViewModels
 {
     public class SearchPageViewModel:ViewModelBase
@@ -23,10 +26,11 @@ namespace WorkTogether.ViewModels
         private async Task LoadAds()
         {
             this.Initializing = true;
+
             // Loader
             var ads = await new ParseQuery<AdModel>()
                 .FindAsync();
-            var z = 0;
+            
             this.Ads = ads.AsQueryable().Select(AdViewModel.FromModel);
             
             this.Initializing = false;

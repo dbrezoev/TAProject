@@ -1,7 +1,8 @@
-﻿using Parse;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+
+using Parse;
 
 namespace WorkTogether.Models
 {
@@ -42,7 +43,7 @@ namespace WorkTogether.Models
             get { return GetProperty<string>(); }
             set { SetProperty<string>(value); }
         }
-        // 2 new props 
+         
         [ParseFieldName("PhoneNumber")]
         public string PhoneNumber
         {
@@ -55,13 +56,6 @@ namespace WorkTogether.Models
         {
             get { return GetProperty<string>(); }
             set { SetProperty<string>(value); }
-        }
-
-        //[ParseFieldName("Creator")]
-        //public ParseUser Creator
-        //{
-        //    get { return GetProperty<ParseUser>(); }
-        //    set { SetProperty<ParseUser>(value); }
-        //}
+        }        
     }
 }
