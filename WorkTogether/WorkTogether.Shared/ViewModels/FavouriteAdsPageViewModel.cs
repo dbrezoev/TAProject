@@ -50,10 +50,5 @@ namespace WorkTogether.ViewModels
                 }
             }
         }
-
-        public void PerformCall()
-        {
-            
-        }
     }
 }

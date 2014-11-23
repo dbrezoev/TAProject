@@ -39,7 +39,7 @@
             </Grid.RowDefinitions>            
                 <TextBlock Grid.Row="0"
                            Style="{StaticResource loginPageTextBlock}"
-                            Text="{Binding Ad.Title, Mode=TwoWay}"/>
+                            Text="{Binding Ad.Title}"/>
             <TextBlock Grid.Row="1"
                         Style="{StaticResource loginPageTextBlock}"
                         Text="{Binding Ad.Content}"/>
@@ -52,11 +52,11 @@
             <TextBlock Grid.Row="4"
                        Style="{StaticResource loginPageTextBlock}"
                        HorizontalAlignment="Left"
-                       Text="{Binding Ad.Name, Mode=TwoWay}"/>
+                       Text="{Binding Ad.Name}"/>
             <TextBlock Grid.Row="4"
                        HorizontalAlignment="Right"
                        Style="{StaticResource loginPageTextBlock}"
-                       Text="{Binding Ad.Phone, Mode=TwoWay}"/>
+                       Text="{Binding Ad.Phone}"/>
             <Button x:ConnectionId='1' Content="Save"
                     Grid.Row="5"
                     HorizontalAlignment="Center"

@@ -121,14 +121,7 @@ namespace WorkTogether.Pages
         private void OnRegisterButtonClick(object sender, RoutedEventArgs e)
         {
 
-            this.ViewModel.RegisterUser();
-            //var user = new ParseUser();
-
-            //user.Username = this.username.Text;
-            //user.Password = this.password.Password;
-            //user["PhoneNumber"] = this.telephoneNumber.Text;
-
-            //await user.SignUpAsync();
+            this.ViewModel.RegisterUser();            
             
             this.Frame.Navigate(typeof(UploadAdPage));
         }
