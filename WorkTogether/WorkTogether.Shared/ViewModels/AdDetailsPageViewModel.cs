@@ -14,7 +14,7 @@ namespace WorkTogether.ViewModels
 {
     public class AdDetailsPageViewModel : ViewModelBase
     {
-        private const string dbName = "Favourites.db";
+        private const string dbName = "FavouriteAds.db";
         private AdViewModel adVm;        
 
         public AdViewModel Ad 

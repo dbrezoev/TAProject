@@ -18,6 +18,8 @@ using WorkTogether.Common;
 using WorkTogether.ViewModels;
 
 using Parse;
+using System.Net.NetworkInformation;
+using Windows.Networking.Connectivity;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -126,7 +128,18 @@ namespace WorkTogether.Pages
 
         private void OnSearchButtonClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(SearchPage));
+            ConnectionProfile InternetConnectionProfile = NetworkInformation.GetInternetConnectionProfile();
+            if (InternetConnectionProfile != null)
+            {
+                //we have internet
+                this.Frame.Navigate(typeof(SearchPage));
+            }
+            else
+            {
+                //we don`t
+                this.Frame.Navigate(typeof(UploadAdSecondPage));
+            } 
+            
         }
 
         //public void OnSignOut(object sender, EventArgs args)

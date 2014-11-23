@@ -13,7 +13,7 @@ namespace WorkTogether.ViewModels
 {
     public class FavouriteAdsPageViewModel : ViewModelBase
     {
-        private const string dbName = "Favourites.db";
+        private const string dbName = "FavouriteAds.db";
         private ObservableCollection<FavouriteAdViewModel> favAds;
 
         public FavouriteAdsPageViewModel()

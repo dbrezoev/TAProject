@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ASUS10</Machine>
+    <WindowsUser>Dobromir</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>4b3b10e9-1a27-4b92-8df7-d0c521f9452a</PackageIdentityName>
+    <IntermediateOutputPath>D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\x86\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>48A0F9510B110234E1C38BC372A325BC476A7CBBCFED5CAE4295D57D0C2B23FF</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>4b3b10e9-1a27-4b92-8df7-d0c521f9452a_1.0.0.0_x86__be3tqg2gt1eat</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>4b3b10e9-1a27-4b92-8df7-d0c521f9452a_be3tqg2gt1eat!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>4b3b10e9-1a27-4b92-8df7-d0c521f9452a</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Dobromir</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-11-23T14:11:47.586</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\WorkTogether.Windows.exe">
+      <PackagePath>WorkTogether.Windows.exe</PackagePath>
+      <Modified>2014-11-23T18:09:57.105</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\packages\MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.dll">
+      <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
+      <Modified>2014-11-21T06:05:59.513</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\packages\MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.Extras.dll">
+      <PackagePath>GalaSoft.MvvmLight.Extras.dll</PackagePath>
+      <Modified>2014-11-21T06:05:59.525</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\packages\MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.Platform.dll">
+      <PackagePath>GalaSoft.MvvmLight.Platform.dll</PackagePath>
+      <Modified>2014-11-21T06:05:59.546</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
+      <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
+      <Modified>2014-11-21T06:05:59.129</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\Libs\Parse.dll">
+      <PackagePath>Parse.dll</PackagePath>
+      <Modified>2014-10-16T10:48:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\Libs\Parse.WinRT.dll">
+      <PackagePath>Parse.WinRT.dll</PackagePath>
+      <Modified>2014-10-16T10:48:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\SQLite.WinRT81\3.8.7.2\Redist\Debug\x86\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+      <Modified>2014-11-22T23:27:16.837</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T07:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T07:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T07:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T07:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-11-23T18:09:56.593</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\AdDetailsPage.xbf">
+      <PackagePath>Pages\AdDetailsPage.xbf</PackagePath>
+      <Modified>2014-11-23T14:11:43.395</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\FavouriteAdsPage.xbf">
+      <PackagePath>Pages\FavouriteAdsPage.xbf</PackagePath>
+      <Modified>2014-11-23T14:11:43.408</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\LoginPage.xbf">
+      <PackagePath>Pages\LoginPage.xbf</PackagePath>
+      <Modified>2014-11-23T14:11:43.412</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\MainPage.xbf">
+      <PackagePath>Pages\MainPage.xbf</PackagePath>
+      <Modified>2014-11-23T14:11:43.415</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\RegisterPage.xbf">
+      <PackagePath>Pages\RegisterPage.xbf</PackagePath>
+      <Modified>2014-11-23T14:11:43.418</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\SearchPage.xbf">
+      <PackagePath>Pages\SearchPage.xbf</PackagePath>
+      <Modified>2014-11-23T18:09:56.602</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\UploadAdPage.xbf">
+      <PackagePath>Pages\UploadAdPage.xbf</PackagePath>
+      <Modified>2014-11-23T16:32:36.711</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\UploadAdSecondPage.xbf">
+      <PackagePath>Pages\UploadAdSecondPage.xbf</PackagePath>
+      <Modified>2014-11-23T16:32:36.715</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Views\HeaderView.xbf">
+      <PackagePath>Views\HeaderView.xbf</PackagePath>
+      <Modified>2014-11-23T18:09:56.605</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Styles\StyleResources.xbf">
+      <PackagePath>Styles\StyleResources.xbf</PackagePath>
+      <Modified>2014-11-23T00:17:46.606</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\WorkTogether.Windows.xr.xml">
+      <PackagePath>WorkTogether.Windows.xr.xml</PackagePath>
+      <Modified>2014-11-23T18:09:56.489</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-11-23T19:01:25.380</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00.Debug</Name>
+      <Version>12.0.21005.1</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Debug, MinVersion = 12.0.21005.1</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.12.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00.Debug</Name>
+      <Version>12.0.21005.1</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Debug, MinVersion = 12.0.21005.1</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.12.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00.Debug</Name>
+      <Version>12.0.21005.1</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Debug, MinVersion = 12.0.21005.1</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.12.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

@@ -145,6 +145,10 @@ namespace WorkTogether.Pages
             {
                 this.Frame.Navigate(typeof(UploadAdPage));
             }
+            else
+            {
+                this.Frame.Navigate(typeof(UploadAdSecondPage));
+            }
         }
     }
 }

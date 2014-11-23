@@ -14,6 +14,7 @@ namespace WorkTogether.ViewModels
         private string title;
         private string contactName;
         private string contactPhone;
+        private string contactsInfo;
 
         public static Expression<Func<FavouriteAd, FavouriteAdViewModel>> FromModel
         {
@@ -64,6 +65,14 @@ namespace WorkTogether.ViewModels
             {
                 this.contactPhone = value;
                 this.RaisePropertyChanged(() => this.ContactPhone);
+            }
+        }
+
+        public string ContactsInfo
+        {
+            get
+            {
+                return this.ContactName + " " + this.ContactPhone;
             }
         }
     }

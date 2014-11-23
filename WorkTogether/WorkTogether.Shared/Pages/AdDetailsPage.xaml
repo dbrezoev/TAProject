@@ -31,7 +31,7 @@
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
             <Grid.RowDefinitions>
                 <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="2*"/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -40,27 +40,40 @@
                 <TextBlock Grid.Row="0"
                            Style="{StaticResource loginPageTextBlock}"
                             Text="{Binding Ad.Title}"/>
-            <TextBlock Grid.Row="1"
+            <ScrollViewer Grid.Row="1">
+                <TextBlock
+                       TextWrapping="Wrap" 
+                    FontSize="20"
                         Style="{StaticResource loginPageTextBlock}"
                         Text="{Binding Ad.Content}"/>
+            </ScrollViewer>
+            
             <TextBlock Grid.Row="2"
+                       FontSize="16"
                        Style="{StaticResource loginPageTextBlock}"
                        Text="{Binding Ad.DateOfEvent}"/>
                 <TextBlock Grid.Row="3"
                            Style="{StaticResource loginPageTextBlock}"
                            Text="{Binding Ad.Town}"/>
             <TextBlock Grid.Row="4"
+                       FontSize="16"
                        Style="{StaticResource loginPageTextBlock}"
                        HorizontalAlignment="Left"
                        Text="{Binding Ad.Name}"/>
             <TextBlock Grid.Row="4"
+                       FontSize="18"
                        HorizontalAlignment="Right"
                        Style="{StaticResource loginPageTextBlock}"
                        Text="{Binding Ad.Phone}"/>
             <Button Content="Save"
                     Grid.Row="5"
-                    HorizontalAlignment="Center"
+                    HorizontalAlignment="Left"
                     Click="OnSaveContactButtonClick"/>
+            <Button Content="Favourites"
+                    Grid.Row="5"
+                    HorizontalAlignment="Right"
+                    Click="OnFavouritesButtonClick"/>
+            
         </Grid>
     </Grid>
 </Page>

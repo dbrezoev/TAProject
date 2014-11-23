@@ -23,10 +23,11 @@
                        VerticalAlignment="Center"
                        FontSize="16"/>
             <Button Content="Sign out"
+                    DoubleTapped="OnSignOutButtonClick"
                     Width="30"
                     Height="30"
                     HorizontalAlignment="Right"
-                    Click="OnSignOutButtonClick"/>
+                    />
         </StackPanel>
         
         <TextBlock Text="{Binding TitleText}" 

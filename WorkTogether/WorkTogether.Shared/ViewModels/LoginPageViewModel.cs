@@ -30,6 +30,7 @@ namespace WorkTogether.ViewModels
             }
             catch (Exception ex)
             {
+                this.Initializing = false;
                 return false;
             }
         }
