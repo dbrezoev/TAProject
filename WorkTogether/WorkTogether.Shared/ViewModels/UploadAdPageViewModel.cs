@@ -68,8 +68,7 @@ namespace WorkTogether.ViewModels
             set
             {
 
-                this.dateOfEvent = value;
-                var a = 5;
+                this.dateOfEvent = value;                
                 this.RaisePropertyChanged(() => this.DateOfEvent);
             }
         }
@@ -83,8 +82,7 @@ namespace WorkTogether.ViewModels
             newAd["Town"] = this.Town;
             newAd["CreatorId"] = ParseUser.CurrentUser.ObjectId;
             newAd["PhoneNumber"] = ParseUser.CurrentUser["PhoneNumber"].ToString();
-            newAd["Name"] = ParseUser.CurrentUser.Username;
-            var a = 9;
+            newAd["Name"] = ParseUser.CurrentUser.Username;            
             await newAd.SaveAsync();
         }
     }

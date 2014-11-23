@@ -26,8 +26,9 @@ namespace WorkTogether.ViewModels
             // Loader
             var ads = await new ParseQuery<AdModel>()
                 .FindAsync();
-
+            var z = 0;
             this.Ads = ads.AsQueryable().Select(AdViewModel.FromModel);
+            
             this.Initializing = false;
         }
 

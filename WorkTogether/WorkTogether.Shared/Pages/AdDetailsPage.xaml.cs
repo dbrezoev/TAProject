@@ -131,7 +131,8 @@ namespace WorkTogether.Pages
 
         private void OnSaveContactButtonClick(object sender, RoutedEventArgs e)
         {
-            
+            this.ViewModel.SaveContact();
+            this.Frame.Navigate(typeof(FavouriteAdsPage));
         }
     }
 }
