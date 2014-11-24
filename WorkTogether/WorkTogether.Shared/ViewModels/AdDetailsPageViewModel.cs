@@ -14,7 +14,7 @@ namespace WorkTogether.ViewModels
 {
     public class AdDetailsPageViewModel : ViewModelBase
     {
-        private const string dbName = "FavouriteAds.db";
+        private const string dbName = "Database.db";
         private AdViewModel adVm;        
 
         public AdViewModel Ad 
@@ -41,8 +41,8 @@ namespace WorkTogether.ViewModels
 
             await AddFavouriteAdsAsync();
 
-            SQLiteAsyncConnection conn = new SQLiteAsyncConnection(dbName);
-            var allArticles = await conn.QueryAsync<FavouriteAd>("SELECT * FROM FavouriteAds");                       
+            //SQLiteAsyncConnection conn = new SQLiteAsyncConnection(dbName);
+            //var allArticles = await conn.QueryAsync<FavouriteAd>("SELECT * FROM Database");                       
         }
 
         private async Task CreateDatabaseAsync()
@@ -76,7 +76,7 @@ namespace WorkTogether.ViewModels
                 ContactName = this.Ad.Name,
                 ContactPhone = this.Ad.Phone
             };
-
+            var a = 9;
             SQLiteAsyncConnection conn = new SQLiteAsyncConnection(dbName);
             await conn.InsertAsync(currentFavouriteAd);            
         }

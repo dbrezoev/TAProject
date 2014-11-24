@@ -130,7 +130,7 @@ namespace WorkTogether.Pages
 
         private void TextBlock_Holding(object sender, HoldingRoutedEventArgs e)
         {            
-            this.ViewModel.DeleteFromDb((sender as TextBlock).Text);
+           this.ViewModel.DeleteFromDb((sender as TextBlock).Text);
         }
     }
 }

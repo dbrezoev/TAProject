@@ -1,0 +1,13 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WorkTogether.Styles">
+    <Style x:Key="mainPageButtonsStyle" TargetType="Button">        
+        <Setter Property="FontFamily" Value="Verdana"/>
+        <Setter Property="BorderBrush" Value="Brown"/>
+        <Setter Property="BorderThickness" Value="2"/>
+        <Setter Property="Background" Value="Beige"/>
+        <Setter Property="Foreground" Value="Brown"/>
+    </Style>
+</ResourceDictionary>
+

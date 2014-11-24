@@ -33,16 +33,31 @@
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot"
               Margin="19,9.5,19,0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button 
-                    Content="Search"
+            <TextBlock Text="find quick job"
+                        HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="36"
+                       FontFamily="Verdana"
+                       FontWeight="ExtraBlack"
+                       Foreground="Brown"
+                       Grid.Row="0"
+                       Grid.ColumnSpan="2"/>
+            <Button Content="search"                
+                    Grid.Row="1"
                     Grid.Column="0"
-                Click="OnSearchButtonClick"
+                    Click="OnSearchButtonClick"
                     HorizontalAlignment="Center"/>
-            <Button Content="Upload"
+            <Button Content="upload"                    
+                    Grid.Row="1"
                     Grid.Column="1"
                     HorizontalAlignment="Center"
                     Click="OnUploadAdButtonClicked"/>

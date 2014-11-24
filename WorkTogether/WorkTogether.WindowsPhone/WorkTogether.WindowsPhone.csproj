@@ -123,6 +123,11 @@
     <Folder Include="Pages\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Styles\MainPageStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
     <Page Include="Styles\StyleResources.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -30,10 +30,57 @@
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
 
+            <!--<ListView ItemsSource="{Binding Ads}"
+                      SelectionChanged="OnItemClick"
+                      SelectionMode="Single"
+                      ItemTemplate="{StaticResource AdTemplate}"/>-->
             <ListView ItemsSource="{Binding Ads}"
                       SelectionChanged="OnItemClick"
                       SelectionMode="Single"
-                      ItemTemplate="{StaticResource AdTemplate}"/>
+                      >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="0"
+                               Margin="0 0 15 0"
+                               Style="{StaticResource BaseTextBlockStyle}"
+                               Grid.Column="0"
+                               Text="Title:"
+                               HorizontalAlignment="Right"
+                               FontWeight="Bold"/>
+                    <TextBlock Grid.Row="0"                               
+                               Style="{StaticResource BaseTextBlockStyle}"
+                               Grid.Column="1"
+                               Text="{Binding Title}"
+                               HorizontalAlignment="Left"
+                               FontWeight="Bold"/>
+
+                    <TextBlock Grid.Row="1"                               
+                               Margin="0 0 20 10"
+                               Grid.Column="0"
+                               Style="{StaticResource BaseTextBlockStyle}"
+                               Text="Town:"
+                               HorizontalAlignment="Right"
+                               FontWeight="Bold"/>
+                    <TextBlock Grid.Row="1"
+                               Margin="0 0 20 10"
+                               Grid.Column="1"
+                               Style="{StaticResource BaseTextBlockStyle}"
+                               Text="{Binding Town}"
+                               HorizontalAlignment="Left"
+                               FontWeight="Bold"/>
+                </Grid>
+                    </DataTemplate>
+                    </ListView.ItemTemplate>
+            </ListView>
         </Grid>
         <ProgressRing HorizontalAlignment="Left"
                       IsActive="{Binding Initializing}"

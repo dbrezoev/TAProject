@@ -15,6 +15,7 @@ Pages\RegisterPage.xbf
 Pages\SearchPage.xbf
 Pages\UploadAdPage.xbf
 Pages\UploadAdSecondPage.xbf
+Styles\MainPageStyle.xbf
 Styles\StyleResources.xbf
 Views\HeaderView.xbf
 WorkTogether.WindowsPhone.xr.xml

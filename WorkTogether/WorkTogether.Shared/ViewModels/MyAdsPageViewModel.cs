@@ -13,7 +13,7 @@ namespace WorkTogether.ViewModels
 {
     public class MyAdsPageViewModel : ViewModelBase
     {
-        private const string dbName = "FavouriteAds.db";
+        private const string dbName = "Database.db";
         private ObservableCollection<FavouriteAdViewModel> favAds;
 
         public MyAdsPageViewModel()
@@ -25,7 +25,8 @@ namespace WorkTogether.ViewModels
         {
             SQLiteAsyncConnection conn = new SQLiteAsyncConnection(dbName);            
             var allArticles = await conn.QueryAsync<FavouriteAd>("SELECT * FROM FavouriteAds");
-            this.FavAds = allArticles.AsQueryable().Select(FavouriteAdViewModel.FromModel);            
+            this.FavAds = allArticles.AsQueryable().Select(FavouriteAdViewModel.FromModel);
+            var a = 9;
         }
 
         public IEnumerable<FavouriteAdViewModel> FavAds
@@ -61,7 +62,7 @@ namespace WorkTogether.ViewModels
             var phone = parts[1];
             
             var toBedeleted = await conn.Table<FavouriteAd>().
-                Where(x => x.ContactName == name && x.ContactPhone==phone).
+                Where(x => x.ContactName == name && x.ContactPhone == phone).
                 FirstOrDefaultAsync();
             if (toBedeleted != null)
             {
@@ -70,7 +71,7 @@ namespace WorkTogether.ViewModels
             }
 
             var msgDialog = new MessageDialog("Item deleted");
-            await msgDialog.ShowAsync();
+            await msgDialog.ShowAsync();           
         }
     }
 }

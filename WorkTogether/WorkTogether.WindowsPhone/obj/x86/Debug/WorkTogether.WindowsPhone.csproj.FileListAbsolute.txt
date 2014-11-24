@@ -101,11 +101,8 @@ D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone
 D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Pages\MyAdsPage.g.cs
 D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Pages\MyAdsPage.xaml
 D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Pages\MyAdsPage.xbf
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles.intermediate
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Microsoft.Practices.ServiceLocation\Resources.resfiles
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Microsoft.Practices.ServiceLocation\Resources.resfiles.intermediate
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Microsoft.Practices.ServiceLocation\pri.resfiles
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Microsoft.Practices.ServiceLocation\pri.resfiles.intermediate
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Microsoft.Practices.ServiceLocation\priconfig.xml
-D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Microsoft.Practices.ServiceLocation\priconfig.xml.intermediate
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\bin\x86\Debug\Styles\MainPageStyle.xbf
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Styles\MainPageStyle.g.i.cs
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Styles\MainPageStyle.g.cs
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Styles\MainPageStyle.xaml
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\obj\x86\Debug\Styles\MainPageStyle.xbf
