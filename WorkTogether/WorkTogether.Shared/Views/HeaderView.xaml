@@ -17,12 +17,16 @@
                    Margin="0,12,0,0"/>
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            
+            <TextBlock Text="Hello, "
+                       Foreground="Green"/>
             <TextBlock Text="{Binding Username}"
+                       Foreground="Green"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Center"
                        FontSize="16"/>
-            <Button Content="Sign out"
+            <Button Content="sign out"
+                    Foreground="RosyBrown"
+                    BorderThickness="0"
                     DoubleTapped="OnSignOutButtonClick"
                     Width="30"
                     Height="30"

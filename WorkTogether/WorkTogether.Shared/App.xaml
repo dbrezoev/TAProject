@@ -7,6 +7,8 @@
         <x:String x:Key="AppName">find a job</x:String>
         <Style x:Key="loginPageTextBlock" TargetType="TextBlock">
             <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontFamily" Value="Verdana"/>
+            <Setter Property="Foreground" Value="Brown"/>
             
         </Style>
         <Style x:Key="BasicTextStyle" TargetType="TextBlock">
@@ -14,9 +16,9 @@
             <Setter Property="FontSize" Value="30"/>
             <Setter Property="Margin" Value="0,0,0,20"/>
         </Style>
-        <DataTemplate x:Key="AdTemplate">
+        <!--<DataTemplate x:Key="AdTemplate">
             
-                <!--<TextBlock Text="{Binding Title}"
+                --><!--<TextBlock Text="{Binding Title}"
                            FontSize="26"/>-->
             <!--<Grid>
                 <Grid.RowDefinitions>
@@ -63,7 +65,7 @@
                     <TextBlock Text="{Binding Title}" FontSize="14.667" FontFamily="Segoe UI" Width="150" TextWrapping="Wrap"/>
                     <TextBlock Text="{Binding Town}" FontSize="12" FontFamily="Segoe UI" Width="150" TextWrapping="Wrap"/>
                 </StackPanel>
-            </StackPanel>-->
+            </StackPanel>--><!--
 
         </DataTemplate>
         <DataTemplate x:Key="FavAdTemplate">
@@ -75,6 +77,6 @@
                 <TextBlock Text="{Binding ContactPhone}"
                            FontSize="18"/>
             </StackPanel>
-        </DataTemplate>
+        </DataTemplate>-->
     </Application.Resources>
 </Application>

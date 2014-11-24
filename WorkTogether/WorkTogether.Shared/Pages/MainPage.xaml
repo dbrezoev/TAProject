@@ -4,10 +4,13 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:WorkTogether.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:app="condition:WINDOWS_APP"
+    xmlns:phone="condition:WINDOWS_PHONE_APP"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     
     xmlns:views="using:WorkTogether.Views"
-    mc:Ignorable="d"
+    mc:Ignorable="d app phone"
+    
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid x:Name="LayoutRoot">
@@ -24,15 +27,15 @@
         </Grid.RowDefinitions>
 
         <!-- Title Panel -->
-        <!--<StackPanel Grid.Row="0" Margin="19,0,0,0">
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
             <TextBlock Text="{StaticResource AppName}" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
-            <TextBlock Text="Main Page" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" />
-        </StackPanel>-->
-        
+            <TextBlock Text="" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" />
+        </StackPanel>
+
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot"
-              Margin="19,9.5,19,0">
+              Margin="38,24,0,-15">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -42,7 +45,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TextBlock Text="find quick job"
+            <phone:TextBlock Text="find quick job"
                         HorizontalAlignment="Center"
                        VerticalAlignment="Center"
                        FontSize="36"
@@ -51,12 +54,54 @@
                        Foreground="Brown"
                        Grid.Row="0"
                        Grid.ColumnSpan="2"/>
-            <Button Content="search"                
+            <app:Button Content="search"
+                    FontSize="28"
+                    BorderBrush="BurlyWood"
+                    BorderThickness="2"
+                    FontFamily="Verdana"
+                    Foreground="BurlyWood"
+                    HorizontalAlignment="Left" 
+                    Margin="429,90,0,0" 
+                    Grid.Row="1" 
+                    Click="OnSearchButtonClick"
+                    VerticalAlignment="Top" 
+                    Height="100"
+                    Width="170"/>
+            <app:Button Content="upload" 
+                    FontSize="28"
+                    BorderBrush="BurlyWood"
+                    BorderThickness="2"
+                    FontFamily="Verdana"
+                    Foreground="BurlyWood"
+                    Grid.Column="1" 
+                    HorizontalAlignment="Left" 
+                    Margin="78,93,0,0" 
+                    Grid.Row="1" 
+                    VerticalAlignment="Top" 
+                    Height="100"
+                    Click="OnUploadAdButtonClicked"
+                    Width="170"/>
+            
+            <app:TextBlock HorizontalAlignment="Left" 
+                       Text="find quick job"
+                       TextAlignment="Center"
+                       FontSize="56"
+                       FontFamily="Verdana"
+                       Foreground="BurlyWood"
+                       FontWeight="ExtraBold"
+                       Margin="365,98,0,0" 
+                       TextWrapping="Wrap"                       
+                       VerticalAlignment="Top" 
+                       Grid.ColumnSpan="2" 
+                       Height="82" 
+                       Width="603"/>
+            
+            <phone:Button Content="search"                
                     Grid.Row="1"
                     Grid.Column="0"
                     Click="OnSearchButtonClick"
                     HorizontalAlignment="Center"/>
-            <Button Content="upload"                    
+            <phone:Button Content="upload"                    
                     Grid.Row="1"
                     Grid.Column="1"
                     HorizontalAlignment="Center"

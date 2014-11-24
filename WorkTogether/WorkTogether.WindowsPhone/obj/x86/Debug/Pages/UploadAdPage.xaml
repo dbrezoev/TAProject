@@ -37,7 +37,7 @@
         
         <!--Working-->
         <views:HeaderView x:ConnectionId='1' Grid.Row="0"
-                          TitleText="Post a job"                          
+                          TitleText="Upload job"                          
                                              
                           Margin="19,0,0,0"/>
 

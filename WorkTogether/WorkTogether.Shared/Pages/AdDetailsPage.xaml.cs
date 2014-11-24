@@ -132,14 +132,17 @@ namespace WorkTogether.Pages
         private void OnSaveContactButtonClick(object sender, RoutedEventArgs e)
         {
             this.ViewModel.SaveContact();
-            //this.Frame.Navigate(typeof(FavouriteAdsPage));
-            this.Frame.Navigate(typeof(MyAdsPage));
+            this.ViewModel.NotifyUser();            
         }
 
         private void OnFavouritesButtonClick(object sender, RoutedEventArgs e)
-        {
-            //this.Frame.Navigate(typeof(FavouriteAdsPage));
+        {            
             this.Frame.Navigate(typeof(MyAdsPage));
+        }
+
+        private void OnGoBackButtonClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.GoBack();
         }
 
        

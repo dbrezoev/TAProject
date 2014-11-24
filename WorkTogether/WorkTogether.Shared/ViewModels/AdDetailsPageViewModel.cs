@@ -9,13 +9,15 @@ using GalaSoft.MvvmLight;
 using Parse;
 
 using WorkTogether.Models;
+using Windows.UI.Popups;
 
 namespace WorkTogether.ViewModels
 {
     public class AdDetailsPageViewModel : ViewModelBase
     {
-        private const string dbName = "Database.db";
-        private AdViewModel adVm;        
+        private const string dbName = "Db.db";        
+        private const string SavedSuccessMessage = "Saved successfully";
+        private AdViewModel adVm;
 
         public AdViewModel Ad 
         {
@@ -31,8 +33,7 @@ namespace WorkTogether.ViewModels
         }
 
         public async void SaveContact()
-        {
-            //TODO:add in sqlite
+        {            
             bool dbExists = await CheckDbAsync(dbName);
             if (!dbExists)
             {
@@ -76,9 +77,15 @@ namespace WorkTogether.ViewModels
                 ContactName = this.Ad.Name,
                 ContactPhone = this.Ad.Phone
             };
-            var a = 9;
+            
             SQLiteAsyncConnection conn = new SQLiteAsyncConnection(dbName);
             await conn.InsertAsync(currentFavouriteAd);            
+        }
+
+        public async void NotifyUser()
+        {
+            var msgDialog = new MessageDialog(SavedSuccessMessage);
+            await msgDialog.ShowAsync();            
         }
     }
 }

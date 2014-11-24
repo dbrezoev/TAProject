@@ -20,13 +20,13 @@
     <AppXManifest Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-11-23T14:11:47.586</Modified>
+      <Modified>2014-11-24T11:29:05.848</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\WorkTogether.Windows.exe">
       <PackagePath>WorkTogether.Windows.exe</PackagePath>
-      <Modified>2014-11-23T18:09:57.105</Modified>
+      <Modified>2014-11-24T12:52:47.404</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\packages\MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.dll">
       <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
@@ -78,15 +78,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2014-11-23T18:09:56.593</Modified>
+      <Modified>2014-11-24T12:52:32.473</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\AdDetailsPage.xbf">
       <PackagePath>Pages\AdDetailsPage.xbf</PackagePath>
-      <Modified>2014-11-23T14:11:43.395</Modified>
+      <Modified>2014-11-24T12:52:32.745</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\FavouriteAdsPage.xbf">
       <PackagePath>Pages\FavouriteAdsPage.xbf</PackagePath>
-      <Modified>2014-11-23T14:11:43.408</Modified>
+      <Modified>2014-11-24T11:35:59.441</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\LoginPage.xbf">
       <PackagePath>Pages\LoginPage.xbf</PackagePath>
@@ -94,7 +94,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\MainPage.xbf">
       <PackagePath>Pages\MainPage.xbf</PackagePath>
-      <Modified>2014-11-23T14:11:43.415</Modified>
+      <Modified>2014-11-24T12:52:32.749</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\MyAdsPage.xbf">
+      <PackagePath>Pages\MyAdsPage.xbf</PackagePath>
+      <Modified>2014-11-24T12:52:32.749</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\RegisterPage.xbf">
       <PackagePath>Pages\RegisterPage.xbf</PackagePath>
@@ -102,7 +106,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\SearchPage.xbf">
       <PackagePath>Pages\SearchPage.xbf</PackagePath>
-      <Modified>2014-11-23T18:09:56.602</Modified>
+      <Modified>2014-11-24T11:35:59.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\UploadAdPage.xbf">
       <PackagePath>Pages\UploadAdPage.xbf</PackagePath>
@@ -110,11 +114,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\UploadAdSecondPage.xbf">
       <PackagePath>Pages\UploadAdSecondPage.xbf</PackagePath>
-      <Modified>2014-11-23T16:32:36.715</Modified>
+      <Modified>2014-11-24T12:52:32.753</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Views\HeaderView.xbf">
       <PackagePath>Views\HeaderView.xbf</PackagePath>
       <Modified>2014-11-23T18:09:56.605</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Styles\MainPageStyle.xbf">
+      <PackagePath>Styles\MainPageStyle.xbf</PackagePath>
+      <Modified>2014-11-24T11:46:59.576</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Styles\StyleResources.xbf">
       <PackagePath>Styles\StyleResources.xbf</PackagePath>
@@ -122,11 +130,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\WorkTogether.Windows.xr.xml">
       <PackagePath>WorkTogether.Windows.xr.xml</PackagePath>
-      <Modified>2014-11-23T18:09:56.489</Modified>
+      <Modified>2014-11-24T12:47:49.829</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-11-23T19:01:25.380</Modified>
+      <Modified>2014-11-24T12:50:59.825</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

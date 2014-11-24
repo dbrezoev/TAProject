@@ -147,7 +147,7 @@ namespace WorkTogether.Pages
             }
             else
             {
-                this.Frame.Navigate(typeof(UploadAdSecondPage));
+                this.Frame.Navigate(typeof(WrongLoginPage));
             }
         }
     }

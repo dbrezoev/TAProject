@@ -124,7 +124,7 @@ namespace WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[27];
+            _typeNameTable = new string[28];
             _typeNameTable[0] = "WorkTogether.Pages.AdDetailsPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -152,8 +152,9 @@ namespace WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo
             _typeNameTable[24] = "WorkTogether.Pages.UploadAdPage";
             _typeNameTable[25] = "WorkTogether.ViewModels.UploadAdPageViewModel";
             _typeNameTable[26] = "WorkTogether.Pages.UploadAdSecondPage";
+            _typeNameTable[27] = "WorkTogether.Pages.WrongLoginPage";
 
-            _typeTable = new global::System.Type[27];
+            _typeTable = new global::System.Type[28];
             _typeTable[0] = typeof(global::WorkTogether.Pages.AdDetailsPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -181,6 +182,7 @@ namespace WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo
             _typeTable[24] = typeof(global::WorkTogether.Pages.UploadAdPage);
             _typeTable[25] = typeof(global::WorkTogether.ViewModels.UploadAdPageViewModel);
             _typeTable[26] = typeof(global::WorkTogether.Pages.UploadAdSecondPage);
+            _typeTable[27] = typeof(global::WorkTogether.Pages.WrongLoginPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -235,6 +237,7 @@ namespace WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo
         private object Activate_24_UploadAdPage() { return new global::WorkTogether.Pages.UploadAdPage(); }
         private object Activate_25_UploadAdPageViewModel() { return new global::WorkTogether.ViewModels.UploadAdPageViewModel(); }
         private object Activate_26_UploadAdSecondPage() { return new global::WorkTogether.Pages.UploadAdSecondPage(); }
+        private object Activate_27_WrongLoginPage() { return new global::WorkTogether.Pages.WrongLoginPage(); }
         private void MapAdd_5_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -451,6 +454,15 @@ namespace WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
+
+            case 27:   //  WorkTogether.Pages.WrongLoginPage
+                userType = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_27_WrongLoginPage;
+                userType.AddMemberName("NavigationHelper");
+                userType.AddMemberName("DefaultViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
             }
             return xamlType;
         }
@@ -631,6 +643,16 @@ namespace WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo
             var that = (global::WorkTogether.Pages.UploadAdSecondPage)instance;
             return that.DefaultViewModel;
         }
+        private object get_27_WrongLoginPage_NavigationHelper(object instance)
+        {
+            var that = (global::WorkTogether.Pages.WrongLoginPage)instance;
+            return that.NavigationHelper;
+        }
+        private object get_28_WrongLoginPage_DefaultViewModel(object instance)
+        {
+            var that = (global::WorkTogether.Pages.WrongLoginPage)instance;
+            return that.DefaultViewModel;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -800,6 +822,18 @@ namespace WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo
                 userType = (global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WorkTogether.Pages.UploadAdSecondPage");
                 xamlMember = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "WorkTogether.Common.ObservableDictionary");
                 xamlMember.Getter = get_26_UploadAdSecondPage_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "WorkTogether.Pages.WrongLoginPage.NavigationHelper":
+                userType = (global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WorkTogether.Pages.WrongLoginPage");
+                xamlMember = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "WorkTogether.Common.NavigationHelper");
+                xamlMember.Getter = get_27_WrongLoginPage_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "WorkTogether.Pages.WrongLoginPage.DefaultViewModel":
+                userType = (global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WorkTogether.Pages.WrongLoginPage");
+                xamlMember = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "WorkTogether.Common.ObservableDictionary");
+                xamlMember.Getter = get_28_WrongLoginPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             }
@@ -1127,9 +1161,5 @@ namespace WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo
         }
     }
 }
-
-
-
-
 
 

@@ -97,6 +97,9 @@
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\bin\x86\Debug\Pages\UploadAdSecondPage.xbf">
       <PackagePath>Pages\UploadAdSecondPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\bin\x86\Debug\Pages\WrongLoginPage.xbf">
+      <PackagePath>Pages\WrongLoginPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.WindowsPhone\bin\x86\Debug\Views\HeaderView.xbf">
       <PackagePath>Views\HeaderView.xbf</PackagePath>
     </AppxPackagedFile>

@@ -132,5 +132,10 @@ namespace WorkTogether.Pages
         {            
            this.ViewModel.DeleteFromDb((sender as TextBlock).Text);
         }
+
+        private void OnGoBackButtonClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.GoBack();
+        }
     }
 }

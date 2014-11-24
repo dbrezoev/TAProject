@@ -7,10 +7,12 @@ Pages\AdDetailsPage.xbf
 Pages\FavouriteAdsPage.xbf
 Pages\LoginPage.xbf
 Pages\MainPage.xbf
+Pages\MyAdsPage.xbf
 Pages\RegisterPage.xbf
 Pages\SearchPage.xbf
 Pages\UploadAdPage.xbf
 Pages\UploadAdSecondPage.xbf
+Styles\MainPageStyle.xbf
 Styles\StyleResources.xbf
 Views\HeaderView.xbf
 WorkTogether.Windows.xr.xml

@@ -4,9 +4,13 @@
     xmlns:local="using:WorkTogether.Styles">
     <Style x:Key="mainPageButtonsStyle" TargetType="Button">        
         <Setter Property="FontFamily" Value="Verdana"/>
-        <Setter Property="BorderBrush" Value="Brown"/>
+        <Setter Property="BorderBrush" Value="BurlyWood"/>
         <Setter Property="BorderThickness" Value="2"/>
-        <Setter Property="Background" Value="Beige"/>
-        <Setter Property="Foreground" Value="Brown"/>
+        <Setter Property="Background" Value="Bisque"/>
+        <Setter Property="Foreground" Value="BurlyWood"/>
+        <Setter Property="FontSize" Value="28"/>
+        <Setter Property="Height" Value="100"/>
+        <Setter Property="Width" Value="170"/>
+        <Setter Property="Foreground" Value="BurlyWood"/>
     </Style>
 </ResourceDictionary>

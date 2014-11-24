@@ -8,12 +8,13 @@ using WorkTogether.Models;
 using System.Linq;
 using System.Threading.Tasks;
 using Windows.UI.Popups;
+using Windows.Storage;
 
 namespace WorkTogether.ViewModels
 {
     public class MyAdsPageViewModel : ViewModelBase
     {
-        private const string dbName = "Database.db";
+        private const string dbName = "Db.db";
         private ObservableCollection<FavouriteAdViewModel> favAds;
 
         public MyAdsPageViewModel()
@@ -23,10 +24,31 @@ namespace WorkTogether.ViewModels
 
         private async void LoadDataFromSqlite()
         {
-            SQLiteAsyncConnection conn = new SQLiteAsyncConnection(dbName);            
-            var allArticles = await conn.QueryAsync<FavouriteAd>("SELECT * FROM FavouriteAds");
-            this.FavAds = allArticles.AsQueryable().Select(FavouriteAdViewModel.FromModel);
+            bool dbExists = await CheckDbAsync(dbName);
+            if (dbExists)
+            {
+                SQLiteAsyncConnection conn = new SQLiteAsyncConnection(dbName);
+                var allArticles = await conn.QueryAsync<FavouriteAd>("SELECT * FROM FavouriteAds");
+                this.FavAds = allArticles.AsQueryable().Select(FavouriteAdViewModel.FromModel);
+            }
+           
             var a = 9;
+        }
+
+        private async Task<bool> CheckDbAsync(string dbName)
+        {
+            bool dbExist = true;
+
+            try
+            {
+                StorageFile sf = await ApplicationData.Current.LocalFolder.GetFileAsync(dbName);
+            }
+            catch (Exception)
+            {
+                dbExist = false;
+            }
+
+            return dbExist;
         }
 
         public IEnumerable<FavouriteAdViewModel> FavAds

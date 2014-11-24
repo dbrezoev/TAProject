@@ -4,9 +4,21 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:WorkTogether.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"    
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">    
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
+    xmlns:app="condition:WINDOWS_APP"
+    xmlns:phone="condition:WINDOWS_PHONE_APP"
+    mc:Ignorable="d app phone"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton x:Name="Add" Label="Add" Icon="Add" />
+                <AppBarButton x:Name="SelectAll" Label="Select All" Icon="SelectAll" />
+                <AppBarButton x:Name="Clear" Label="Clear" Icon="Clear" />
+                <AppBarButton x:Name="Delete" Label="Delete" Icon="Delete" />
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
     <Grid x:Name="LayoutRoot">
 
         <Grid.ChildrenTransitions>
@@ -22,8 +34,8 @@
 
         <!-- Title Panel -->
         <StackPanel Grid.Row="0" Margin="19,0,0,0">
-            <TextBlock Text="MY APPLICATION" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
-            <TextBlock Text="page title" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" />
+            <TextBlock Text="{StaticResource AppName}" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Text="favourites" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" />
         </StackPanel>
 
         <!--TODO: Content should be placed within the following grid-->
@@ -62,5 +74,19 @@
                 </ItemsControl.Template>
             </ItemsControl>
         </Grid>
+        <app:Button Content="Go back" 
+                FontSize="46"
+                Foreground="BurlyWood"
+                FontFamily="Verdana"
+                BorderBrush="BurlyWood"
+                BorderThickness="2"
+                Click="OnGoBackButtonClick"
+                HorizontalAlignment="Left" 
+                Margin="550,472,0,0" 
+                Grid.Row="1" 
+                VerticalAlignment="Top" 
+                Height="137" 
+                Width="257"/>
+
     </Grid>
 </Page>
