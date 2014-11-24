@@ -121,8 +121,7 @@ namespace WorkTogether.Pages
             }
             else
             {
-                this.Frame.Navigate(typeof(Pages.LoginPage));
-               // this.Frame.Navigate(typeof(Pages.LoginPage), new LoginPageViewModel());
+                this.Frame.Navigate(typeof(Pages.LoginPage));               
             }
         }
 
@@ -140,11 +139,6 @@ namespace WorkTogether.Pages
                 this.Frame.Navigate(typeof(UploadAdSecondPage));
             } 
             
-        }
-
-        //public void OnSignOut(object sender, EventArgs args)
-        //{
-        //    this.Frame.Navigate(typeof(MainPage));
-        //}
+        }        
     }
 }

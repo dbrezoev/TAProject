@@ -1,3 +1,5 @@
+Assets\gray_background.png
+Assets\image_back.jpg
 Assets\Logo.scale-100.png
 Assets\SmallLogo.scale-100.png
 Assets\SplashScreen.scale-100.png
@@ -10,8 +12,10 @@ Pages\MainPage.xbf
 Pages\MyAdsPage.xbf
 Pages\RegisterPage.xbf
 Pages\SearchPage.xbf
+Pages\SuccessUploadPage.xbf
 Pages\UploadAdPage.xbf
 Pages\UploadAdSecondPage.xbf
+Pages\WrongLoginPage.xbf
 Styles\MainPageStyle.xbf
 Styles\StyleResources.xbf
 Views\HeaderView.xbf

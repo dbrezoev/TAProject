@@ -14,12 +14,13 @@
             <CommandBar.PrimaryCommands>
                 <AppBarButton x:Name="Add" Label="Add" Icon="Add" />
                 <AppBarButton x:Name="SelectAll" Label="Select All" Icon="SelectAll" />
-                <AppBarButton x:Name="Clear" Label="Clear" Icon="Clear" />
-                <AppBarButton x:Name="Delete" Label="Delete" Icon="Delete" />
+                <!--<AppBarButton x:Name="Clear" Label="Clear" Icon="Clear" />
+                <AppBarButton x:Name="Delete" Label="Delete" Icon="Delete" />-->
             </CommandBar.PrimaryCommands>
         </CommandBar>
     </Page.BottomAppBar>
-    <Grid x:Name="LayoutRoot">
+    <Grid x:Name="LayoutRoot"
+          Style="{StaticResource background_image}">
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -40,7 +41,7 @@
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
-            <ItemsControl ItemsSource="{Binding FavAds}" x:Name="todoList">
+            <ItemsControl ItemsSource="{Binding FavAds, Mode=TwoWay}" x:Name="todoList">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <Border Background="Brown">
@@ -58,7 +59,7 @@
                                 <!-- task text -->
                                 <TextBlock Text="{Binding ContactsInfo, Mode=TwoWay}" 
                                            Margin="15,15,0,15" 
-                                           Holding="TextBlock_Holding"
+                                           Holding="OnHoldItem"
                                            FontSize="30"/>
                             </Grid>
                         </Border>

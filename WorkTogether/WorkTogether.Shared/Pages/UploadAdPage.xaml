@@ -7,17 +7,19 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:views="using:WorkTogether.Views"
     xmlns:converters="using:WorkTogether.Converters"
-    mc:Ignorable="d"
+    xmlns:app="condition:WINDOWS_APP"
+    xmlns:phone="condition:WINDOWS_PHONE_APP"
+    mc:Ignorable="d app phone"
     
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    
+
 
     <Page.Resources>
-        <converters:DateTimeToStringConverter x:Key="StringConverter" />        
+        <converters:DateTimeToStringConverter x:Key="StringConverter" />
     </Page.Resources>
-    <Grid>
+    <Grid Style="{StaticResource background_image}">
 
-        
+
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
@@ -34,7 +36,7 @@
             <TextBlock Text="MY APPLICATION" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
             <TextBlock Text="page title" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}"/>
         </StackPanel>-->
-        
+
         <!--Working-->
         <views:HeaderView Grid.Row="0"
                           TitleText="Upload job"                          
@@ -78,10 +80,29 @@
             <DatePicker Name="DatePicker"                        
                         Date="{Binding DateOfEvent, Mode=TwoWay}"
                         Grid.Row="7"/>
-            <Button Grid.Row="8"
+            <phone:Button Grid.Row="8"
+                           BorderBrush="Brown"
+                    BorderThickness="2"
+                    FontFamily="Verdana"
+                    Foreground="BurlyWood"
                     HorizontalAlignment="Center"
                     Click="OnCreateAdButtonClick"
                     Content="Create"/>
+            <app:Button Grid.Row="8"
+                    HorizontalAlignment="Center"
+                    Click="OnCreateAdButtonClick"
+                    Content="Create" 
+                    Margin="540,7.5,698,6.5" 
+                    Height="55"
+                    Width="90"/>
+            <app:Button Content="Back" 
+                    Click="OnbackButtonAppClick"
+                    HorizontalAlignment="Left"
+                    Margin="718,8.5,0,0" 
+                    Grid.Row="8" 
+                    VerticalAlignment="Top"
+                    Height="55"
+                    Width="90"/>
         </Grid>
     </Grid>
 </Page>

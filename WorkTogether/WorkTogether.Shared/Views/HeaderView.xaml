@@ -30,8 +30,7 @@
                     DoubleTapped="OnSignOutButtonClick"
                     Width="30"
                     Height="30"
-                    HorizontalAlignment="Right"
-                    />
+                    HorizontalAlignment="Right"/>
         </StackPanel>
         
         <TextBlock Text="{Binding TitleText}" 

@@ -4,6 +4,15 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:WorkTogether">
     <Application.Resources>
+        
+            <Style x:Key="background_image" TargetType="Grid">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <ImageBrush ImageSource="/Assets/image_back.jpg"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        
         <x:String x:Key="AppName">find a job</x:String>
         <Style x:Key="loginPageTextBlock" TargetType="TextBlock">
             <Setter Property="FontSize" Value="30"/>

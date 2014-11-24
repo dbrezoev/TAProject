@@ -150,8 +150,13 @@ namespace WorkTogether.Pages
             if (isCorrectData)
             {
                 //navigate here
-                this.Frame.Navigate(typeof(UploadAdSecondPage));
+                this.Frame.Navigate(typeof(SuccessUploadPage));
             }
+        }
+
+        private void OnbackButtonAppClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.GoBack();
         }
     }
 }

@@ -8,7 +8,8 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid x:Name="LayoutRoot">
+    <Grid x:Name="LayoutRoot"
+          Style="{StaticResource background_image}">
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -47,14 +48,23 @@
             <PasswordBox Password="{Binding User.Password, Mode=TwoWay}"
                         Grid.Row="3"/>
             <Button Content="Login"
+                     BorderBrush="Brown"
+                    BorderThickness="2"
+                    FontFamily="Verdana"
+                    Foreground="BurlyWood"
                     HorizontalAlignment="Left"
                     Click="OnLoginButtonClick"
                     Grid.Row="4"/>
             <Button Content="Register"
+                     BorderBrush="Brown"
+                    BorderThickness="2"
+                    FontFamily="Verdana"
+                    Foreground="BurlyWood"
                     HorizontalAlignment="Right"
                     Click="OnRegisterButtonClick"
                     Grid.Row="4"/>
             <ProgressRing HorizontalAlignment="Center"
+                          Background="Transparent"
                           IsActive="{Binding Initializing}"
                           Grid.Row="4"
                           VerticalAlignment="Center"/>

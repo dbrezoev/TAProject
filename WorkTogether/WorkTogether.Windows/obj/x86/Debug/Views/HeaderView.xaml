@@ -17,17 +17,20 @@
                    Margin="0,12,0,0"/>
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            
+            <TextBlock Text="Hello, "
+                       Foreground="Green"/>
             <TextBlock Text="{Binding Username}"
+                       Foreground="Green"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Center"
                        FontSize="16"/>
-            <Button x:ConnectionId='1' Content="Sign out"
+            <Button x:ConnectionId='1' Content="sign out"
+                    Foreground="RosyBrown"
+                    BorderThickness="0"
                                                        
                     Width="30"
                     Height="30"
-                    HorizontalAlignment="Right"
-                    />
+                    HorizontalAlignment="Right"/>
         </StackPanel>
         
         <TextBlock Text="{Binding TitleText}" 

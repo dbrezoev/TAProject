@@ -1,6 +1,6 @@
 ﻿<Page x:Class="WorkTogether.Pages.AdDetailsPage" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="using:WorkTogether.Pages" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid x:Name="LayoutRoot">
+    <Grid x:Name="LayoutRoot" Style="{StaticResource background_image}">
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -28,22 +28,23 @@
                 <RowDefinition />
                 <RowDefinition />
                 <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" TextWrapping="Wrap" HorizontalAlignment="Center" Style="{StaticResource loginPageTextBlock}" Text="{Binding Ad.Title}" />
+            <TextBlock Grid.Row="0" FontSize="20" TextWrapping="Wrap" HorizontalAlignment="Center" Style="{StaticResource loginPageTextBlock}" Text="{Binding Ad.Title}" />
             <ScrollViewer Grid.Row="1">
                 <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="20" Style="{StaticResource loginPageTextBlock}" Text="{Binding Ad.Content}" />
             </ScrollViewer>
 
             <TextBlock Grid.Row="2" HorizontalAlignment="Center" FontSize="16" Style="{StaticResource loginPageTextBlock}" Text="{Binding Ad.DateOfEvent}" />
             <TextBlock Grid.Row="3" HorizontalAlignment="Center" Style="{StaticResource loginPageTextBlock}" Text="{Binding Ad.Town}" />
-            <TextBlock Grid.Row="4" HorizontalAlignment="Left" FontSize="16" Style="{StaticResource loginPageTextBlock}" Text="{Binding Ad.Name}" />
-            <TextBlock Grid.Row="4" FontSize="18" HorizontalAlignment="Right" Style="{StaticResource loginPageTextBlock}" Text="{Binding Ad.Phone}" />
-            <Button Content="save contact" Grid.Row="5" HorizontalAlignment="Left" Click="OnSaveContactButtonClick" />
-            <Button Content="Favourites" Grid.Row="5" HorizontalAlignment="Right" Click="OnFavouritesButtonClick" />
+            <TextBlock Grid.Row="4" HorizontalAlignment="Center" FontSize="16" Margin="10 0 0 0" Style="{StaticResource loginPageTextBlock}" Text="{Binding Ad.Name}" />
+            <TextBlock Grid.Row="5" FontSize="18" Margin="0 0 10 0" HorizontalAlignment="Center" Style="{StaticResource loginPageTextBlock}" Text="{Binding Ad.Phone}" />
+            <Button Content="save contact" BorderBrush="Brown" BorderThickness="2" FontFamily="Verdana" Foreground="BurlyWood" Grid.Row="6" HorizontalAlignment="Left" Click="OnSaveContactButtonClick" />
+            <Button Content="Favourites" BorderBrush="Brown" BorderThickness="2" FontFamily="Verdana" Foreground="BurlyWood" Grid.Row="6" HorizontalAlignment="Right" Click="OnFavouritesButtonClick" />
 
             
             
-            
+            <Button Content="favourites" Width="200" FontSize="30" Foreground="BurlyWood" FontWeight="SemiBold" Height="80" Grid.Row="6" HorizontalAlignment="Center" Margin="650 0 0 10" Click="OnFavouritesButtonClick" />
         </Grid>
     </Grid>
 </Page>

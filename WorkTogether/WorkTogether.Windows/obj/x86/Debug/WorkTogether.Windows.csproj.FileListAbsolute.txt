@@ -109,3 +109,15 @@ D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\
 D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\x86\Debug\Pages\MyAdsPage.xbf
 D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\x86\Debug\preprocessedxaml\Pages\MyAdsPage.xaml
 D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\x86\Debug\preprocessedxaml\Pages\AdDetailsPage.xaml
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\SuccessUploadPage.xbf
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\bin\x86\Debug\Pages\WrongLoginPage.xbf
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\x86\Debug\Pages\SuccessUploadPage.g.i.cs
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\x86\Debug\Pages\SuccessUploadPage.g.cs
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\x86\Debug\Pages\WrongLoginPage.g.i.cs
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\x86\Debug\Pages\WrongLoginPage.g.cs
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\x86\Debug\Pages\WrongLoginPage.xaml
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\x86\Debug\Pages\WrongLoginPage.xbf
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\x86\Debug\Pages\SuccessUploadPage.xaml
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\x86\Debug\Pages\SuccessUploadPage.xbf
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\x86\Debug\preprocessedxaml\Pages\SearchPage.xaml
+D:\TELERIK ACADEMY\WindowsPhone\TAProject\WorkTogether\WorkTogether.Windows\obj\x86\Debug\preprocessedxaml\Pages\UploadAdPage.xaml

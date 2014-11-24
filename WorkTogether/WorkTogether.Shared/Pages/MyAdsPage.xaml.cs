@@ -34,6 +34,7 @@ namespace WorkTogether.Pages
         {
 
         }
+
         public MyAdsPage(MyAdsPageViewModel viewModel)
         {
             this.InitializeComponent();
@@ -128,9 +129,10 @@ namespace WorkTogether.Pages
 
         #endregion
 
-        private void TextBlock_Holding(object sender, HoldingRoutedEventArgs e)
+        private void OnHoldItem(object sender, HoldingRoutedEventArgs e)
         {            
            this.ViewModel.DeleteFromDb((sender as TextBlock).Text);
+           
         }
 
         private void OnGoBackButtonClick(object sender, RoutedEventArgs e)

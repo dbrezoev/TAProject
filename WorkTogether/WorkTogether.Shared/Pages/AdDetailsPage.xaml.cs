@@ -144,7 +144,5 @@ namespace WorkTogether.Pages
         {
             this.Frame.GoBack();
         }
-
-       
     }
 }

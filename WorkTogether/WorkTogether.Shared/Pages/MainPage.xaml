@@ -10,10 +10,18 @@
     
     xmlns:views="using:WorkTogether.Views"
     mc:Ignorable="d app phone"
-    
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    <Grid x:Name="LayoutRoot">
+    >
+    <!--<Page.Resources>
+        <Style x:Key="background_image" TargetType="Grid">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <ImageBrush ImageSource="/Assets/image_back.jpg"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>-->
+    <Grid x:Name="LayoutRoot" 
+          Style="{StaticResource background_image}">
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -98,10 +106,18 @@
             
             <phone:Button Content="search"                
                     Grid.Row="1"
+                    BorderBrush="Brown"
+                    BorderThickness="2"
+                    FontFamily="Verdana"
+                    Foreground="BurlyWood"
                     Grid.Column="0"
                     Click="OnSearchButtonClick"
                     HorizontalAlignment="Center"/>
-            <phone:Button Content="upload"                    
+            <phone:Button Content="upload"  
+                     BorderBrush="Brown"
+                    BorderThickness="2"
+                    FontFamily="Verdana"
+                    Foreground="BurlyWood"
                     Grid.Row="1"
                     Grid.Column="1"
                     HorizontalAlignment="Center"

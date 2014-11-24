@@ -133,5 +133,10 @@ namespace WorkTogether.Pages
             var itemSelected = itemsListView.SelectedItem;
             this.Frame.Navigate(typeof(AdDetailsPage), itemSelected);
         }
+
+        private void OnBackButtonAppClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.GoBack();
+        }
     }
 }

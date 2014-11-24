@@ -14,7 +14,7 @@ namespace WorkTogether.ViewModels
         private string title;
         private string contactName;
         private string contactPhone;
-        private string contactsInfo;
+        private string contactsInfo;       
 
         public static Expression<Func<FavouriteAd, FavouriteAdViewModel>> FromModel
         {
@@ -72,7 +72,7 @@ namespace WorkTogether.ViewModels
         {
             get
             {
-                return this.ContactName + " " + this.ContactPhone;
+                return this.ContactName + " " + this.ContactPhone;                
             }
         }
     }

@@ -17,6 +17,7 @@ namespace WorkTogether.ViewModels
     {
         private const string dbName = "Db.db";        
         private const string SavedSuccessMessage = "Saved successfully";
+
         private AdViewModel adVm;
 
         public AdViewModel Ad 

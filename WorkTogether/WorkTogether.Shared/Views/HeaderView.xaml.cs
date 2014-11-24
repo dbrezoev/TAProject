@@ -54,7 +54,5 @@ namespace WorkTogether.Views
                 this.SignOut(this, null);
             }
         }
-
-        
      }
 }

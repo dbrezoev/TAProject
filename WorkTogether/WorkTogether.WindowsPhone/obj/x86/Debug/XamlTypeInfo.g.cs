@@ -124,7 +124,7 @@ namespace WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[28];
+            _typeNameTable = new string[29];
             _typeNameTable[0] = "WorkTogether.Pages.AdDetailsPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -147,14 +147,15 @@ namespace WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo
             _typeNameTable[19] = "WorkTogether.ViewModels.RegisterPageViewModel";
             _typeNameTable[20] = "WorkTogether.Pages.SearchPage";
             _typeNameTable[21] = "WorkTogether.ViewModels.SearchPageViewModel";
-            _typeNameTable[22] = "WorkTogether.Converters.DateTimeToStringConverter";
-            _typeNameTable[23] = "WorkTogether.Views.HeaderView";
-            _typeNameTable[24] = "WorkTogether.Pages.UploadAdPage";
-            _typeNameTable[25] = "WorkTogether.ViewModels.UploadAdPageViewModel";
-            _typeNameTable[26] = "WorkTogether.Pages.UploadAdSecondPage";
-            _typeNameTable[27] = "WorkTogether.Pages.WrongLoginPage";
+            _typeNameTable[22] = "WorkTogether.Pages.SuccessUploadPage";
+            _typeNameTable[23] = "WorkTogether.Converters.DateTimeToStringConverter";
+            _typeNameTable[24] = "WorkTogether.Views.HeaderView";
+            _typeNameTable[25] = "WorkTogether.Pages.UploadAdPage";
+            _typeNameTable[26] = "WorkTogether.ViewModels.UploadAdPageViewModel";
+            _typeNameTable[27] = "WorkTogether.Pages.UploadAdSecondPage";
+            _typeNameTable[28] = "WorkTogether.Pages.WrongLoginPage";
 
-            _typeTable = new global::System.Type[28];
+            _typeTable = new global::System.Type[29];
             _typeTable[0] = typeof(global::WorkTogether.Pages.AdDetailsPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -177,12 +178,13 @@ namespace WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo
             _typeTable[19] = typeof(global::WorkTogether.ViewModels.RegisterPageViewModel);
             _typeTable[20] = typeof(global::WorkTogether.Pages.SearchPage);
             _typeTable[21] = typeof(global::WorkTogether.ViewModels.SearchPageViewModel);
-            _typeTable[22] = typeof(global::WorkTogether.Converters.DateTimeToStringConverter);
-            _typeTable[23] = typeof(global::WorkTogether.Views.HeaderView);
-            _typeTable[24] = typeof(global::WorkTogether.Pages.UploadAdPage);
-            _typeTable[25] = typeof(global::WorkTogether.ViewModels.UploadAdPageViewModel);
-            _typeTable[26] = typeof(global::WorkTogether.Pages.UploadAdSecondPage);
-            _typeTable[27] = typeof(global::WorkTogether.Pages.WrongLoginPage);
+            _typeTable[22] = typeof(global::WorkTogether.Pages.SuccessUploadPage);
+            _typeTable[23] = typeof(global::WorkTogether.Converters.DateTimeToStringConverter);
+            _typeTable[24] = typeof(global::WorkTogether.Views.HeaderView);
+            _typeTable[25] = typeof(global::WorkTogether.Pages.UploadAdPage);
+            _typeTable[26] = typeof(global::WorkTogether.ViewModels.UploadAdPageViewModel);
+            _typeTable[27] = typeof(global::WorkTogether.Pages.UploadAdSecondPage);
+            _typeTable[28] = typeof(global::WorkTogether.Pages.WrongLoginPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -232,12 +234,13 @@ namespace WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo
         private object Activate_19_RegisterPageViewModel() { return new global::WorkTogether.ViewModels.RegisterPageViewModel(); }
         private object Activate_20_SearchPage() { return new global::WorkTogether.Pages.SearchPage(); }
         private object Activate_21_SearchPageViewModel() { return new global::WorkTogether.ViewModels.SearchPageViewModel(); }
-        private object Activate_22_DateTimeToStringConverter() { return new global::WorkTogether.Converters.DateTimeToStringConverter(); }
-        private object Activate_23_HeaderView() { return new global::WorkTogether.Views.HeaderView(); }
-        private object Activate_24_UploadAdPage() { return new global::WorkTogether.Pages.UploadAdPage(); }
-        private object Activate_25_UploadAdPageViewModel() { return new global::WorkTogether.ViewModels.UploadAdPageViewModel(); }
-        private object Activate_26_UploadAdSecondPage() { return new global::WorkTogether.Pages.UploadAdSecondPage(); }
-        private object Activate_27_WrongLoginPage() { return new global::WorkTogether.Pages.WrongLoginPage(); }
+        private object Activate_22_SuccessUploadPage() { return new global::WorkTogether.Pages.SuccessUploadPage(); }
+        private object Activate_23_DateTimeToStringConverter() { return new global::WorkTogether.Converters.DateTimeToStringConverter(); }
+        private object Activate_24_HeaderView() { return new global::WorkTogether.Views.HeaderView(); }
+        private object Activate_25_UploadAdPage() { return new global::WorkTogether.Pages.UploadAdPage(); }
+        private object Activate_26_UploadAdPageViewModel() { return new global::WorkTogether.ViewModels.UploadAdPageViewModel(); }
+        private object Activate_27_UploadAdSecondPage() { return new global::WorkTogether.Pages.UploadAdSecondPage(); }
+        private object Activate_28_WrongLoginPage() { return new global::WorkTogether.Pages.WrongLoginPage(); }
         private void MapAdd_5_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -413,25 +416,34 @@ namespace WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 22:   //  WorkTogether.Converters.DateTimeToStringConverter
-                userType = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_22_DateTimeToStringConverter;
+            case 22:   //  WorkTogether.Pages.SuccessUploadPage
+                userType = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_22_SuccessUploadPage;
+                userType.AddMemberName("NavigationHelper");
+                userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 23:   //  WorkTogether.Views.HeaderView
+            case 23:   //  WorkTogether.Converters.DateTimeToStringConverter
+                userType = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_23_DateTimeToStringConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 24:   //  WorkTogether.Views.HeaderView
                 userType = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_23_HeaderView;
+                userType.Activator = Activate_24_HeaderView;
                 userType.AddMemberName("TitleText");
                 userType.AddMemberName("Username");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 24:   //  WorkTogether.Pages.UploadAdPage
+            case 25:   //  WorkTogether.Pages.UploadAdPage
                 userType = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_24_UploadAdPage;
+                userType.Activator = Activate_25_UploadAdPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("ViewModel");
@@ -439,25 +451,25 @@ namespace WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 25:   //  WorkTogether.ViewModels.UploadAdPageViewModel
+            case 26:   //  WorkTogether.ViewModels.UploadAdPageViewModel
                 userType = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("GalaSoft.MvvmLight.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 26:   //  WorkTogether.Pages.UploadAdSecondPage
+            case 27:   //  WorkTogether.Pages.UploadAdSecondPage
                 userType = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_26_UploadAdSecondPage;
+                userType.Activator = Activate_27_UploadAdSecondPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 27:   //  WorkTogether.Pages.WrongLoginPage
+            case 28:   //  WorkTogether.Pages.WrongLoginPage
                 userType = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_27_WrongLoginPage;
+                userType.Activator = Activate_28_WrongLoginPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
@@ -598,57 +610,67 @@ namespace WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo
             var that = (global::WorkTogether.Pages.SearchPage)instance;
             that.ViewModel = (global::WorkTogether.ViewModels.SearchPageViewModel)Value;
         }
-        private object get_20_HeaderView_TitleText(object instance)
+        private object get_20_SuccessUploadPage_NavigationHelper(object instance)
+        {
+            var that = (global::WorkTogether.Pages.SuccessUploadPage)instance;
+            return that.NavigationHelper;
+        }
+        private object get_21_SuccessUploadPage_DefaultViewModel(object instance)
+        {
+            var that = (global::WorkTogether.Pages.SuccessUploadPage)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_22_HeaderView_TitleText(object instance)
         {
             var that = (global::WorkTogether.Views.HeaderView)instance;
             return that.TitleText;
         }
-        private void set_20_HeaderView_TitleText(object instance, object Value)
+        private void set_22_HeaderView_TitleText(object instance, object Value)
         {
             var that = (global::WorkTogether.Views.HeaderView)instance;
             that.TitleText = (global::System.String)Value;
         }
-        private object get_21_HeaderView_Username(object instance)
+        private object get_23_HeaderView_Username(object instance)
         {
             var that = (global::WorkTogether.Views.HeaderView)instance;
             return that.Username;
         }
-        private object get_22_UploadAdPage_NavigationHelper(object instance)
+        private object get_24_UploadAdPage_NavigationHelper(object instance)
         {
             var that = (global::WorkTogether.Pages.UploadAdPage)instance;
             return that.NavigationHelper;
         }
-        private object get_23_UploadAdPage_DefaultViewModel(object instance)
+        private object get_25_UploadAdPage_DefaultViewModel(object instance)
         {
             var that = (global::WorkTogether.Pages.UploadAdPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_24_UploadAdPage_ViewModel(object instance)
+        private object get_26_UploadAdPage_ViewModel(object instance)
         {
             var that = (global::WorkTogether.Pages.UploadAdPage)instance;
             return that.ViewModel;
         }
-        private void set_24_UploadAdPage_ViewModel(object instance, object Value)
+        private void set_26_UploadAdPage_ViewModel(object instance, object Value)
         {
             var that = (global::WorkTogether.Pages.UploadAdPage)instance;
             that.ViewModel = (global::WorkTogether.ViewModels.UploadAdPageViewModel)Value;
         }
-        private object get_25_UploadAdSecondPage_NavigationHelper(object instance)
+        private object get_27_UploadAdSecondPage_NavigationHelper(object instance)
         {
             var that = (global::WorkTogether.Pages.UploadAdSecondPage)instance;
             return that.NavigationHelper;
         }
-        private object get_26_UploadAdSecondPage_DefaultViewModel(object instance)
+        private object get_28_UploadAdSecondPage_DefaultViewModel(object instance)
         {
             var that = (global::WorkTogether.Pages.UploadAdSecondPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_27_WrongLoginPage_NavigationHelper(object instance)
+        private object get_29_WrongLoginPage_NavigationHelper(object instance)
         {
             var that = (global::WorkTogether.Pages.WrongLoginPage)instance;
             return that.NavigationHelper;
         }
-        private object get_28_WrongLoginPage_DefaultViewModel(object instance)
+        private object get_30_WrongLoginPage_DefaultViewModel(object instance)
         {
             var that = (global::WorkTogether.Pages.WrongLoginPage)instance;
             return that.DefaultViewModel;
@@ -781,59 +803,71 @@ namespace WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo
                 xamlMember.Getter = get_19_SearchPage_ViewModel;
                 xamlMember.Setter = set_19_SearchPage_ViewModel;
                 break;
+            case "WorkTogether.Pages.SuccessUploadPage.NavigationHelper":
+                userType = (global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WorkTogether.Pages.SuccessUploadPage");
+                xamlMember = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "WorkTogether.Common.NavigationHelper");
+                xamlMember.Getter = get_20_SuccessUploadPage_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "WorkTogether.Pages.SuccessUploadPage.DefaultViewModel":
+                userType = (global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WorkTogether.Pages.SuccessUploadPage");
+                xamlMember = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "WorkTogether.Common.ObservableDictionary");
+                xamlMember.Getter = get_21_SuccessUploadPage_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
             case "WorkTogether.Views.HeaderView.TitleText":
                 userType = (global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WorkTogether.Views.HeaderView");
                 xamlMember = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlMember(this, "TitleText", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_20_HeaderView_TitleText;
-                xamlMember.Setter = set_20_HeaderView_TitleText;
+                xamlMember.Getter = get_22_HeaderView_TitleText;
+                xamlMember.Setter = set_22_HeaderView_TitleText;
                 break;
             case "WorkTogether.Views.HeaderView.Username":
                 userType = (global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WorkTogether.Views.HeaderView");
                 xamlMember = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlMember(this, "Username", "String");
-                xamlMember.Getter = get_21_HeaderView_Username;
+                xamlMember.Getter = get_23_HeaderView_Username;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WorkTogether.Pages.UploadAdPage.NavigationHelper":
                 userType = (global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WorkTogether.Pages.UploadAdPage");
                 xamlMember = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "WorkTogether.Common.NavigationHelper");
-                xamlMember.Getter = get_22_UploadAdPage_NavigationHelper;
+                xamlMember.Getter = get_24_UploadAdPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WorkTogether.Pages.UploadAdPage.DefaultViewModel":
                 userType = (global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WorkTogether.Pages.UploadAdPage");
                 xamlMember = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "WorkTogether.Common.ObservableDictionary");
-                xamlMember.Getter = get_23_UploadAdPage_DefaultViewModel;
+                xamlMember.Getter = get_25_UploadAdPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WorkTogether.Pages.UploadAdPage.ViewModel":
                 userType = (global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WorkTogether.Pages.UploadAdPage");
                 xamlMember = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlMember(this, "ViewModel", "WorkTogether.ViewModels.UploadAdPageViewModel");
-                xamlMember.Getter = get_24_UploadAdPage_ViewModel;
-                xamlMember.Setter = set_24_UploadAdPage_ViewModel;
+                xamlMember.Getter = get_26_UploadAdPage_ViewModel;
+                xamlMember.Setter = set_26_UploadAdPage_ViewModel;
                 break;
             case "WorkTogether.Pages.UploadAdSecondPage.NavigationHelper":
                 userType = (global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WorkTogether.Pages.UploadAdSecondPage");
                 xamlMember = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "WorkTogether.Common.NavigationHelper");
-                xamlMember.Getter = get_25_UploadAdSecondPage_NavigationHelper;
+                xamlMember.Getter = get_27_UploadAdSecondPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WorkTogether.Pages.UploadAdSecondPage.DefaultViewModel":
                 userType = (global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WorkTogether.Pages.UploadAdSecondPage");
                 xamlMember = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "WorkTogether.Common.ObservableDictionary");
-                xamlMember.Getter = get_26_UploadAdSecondPage_DefaultViewModel;
+                xamlMember.Getter = get_28_UploadAdSecondPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WorkTogether.Pages.WrongLoginPage.NavigationHelper":
                 userType = (global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WorkTogether.Pages.WrongLoginPage");
                 xamlMember = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "WorkTogether.Common.NavigationHelper");
-                xamlMember.Getter = get_27_WrongLoginPage_NavigationHelper;
+                xamlMember.Getter = get_29_WrongLoginPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WorkTogether.Pages.WrongLoginPage.DefaultViewModel":
                 userType = (global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WorkTogether.Pages.WrongLoginPage");
                 xamlMember = new global::WorkTogether.WorkTogether_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "WorkTogether.Common.ObservableDictionary");
-                xamlMember.Getter = get_28_WrongLoginPage_DefaultViewModel;
+                xamlMember.Getter = get_30_WrongLoginPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             }

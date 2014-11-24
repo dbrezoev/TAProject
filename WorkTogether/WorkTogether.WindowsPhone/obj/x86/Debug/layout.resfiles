@@ -1,4 +1,5 @@
 Assets\gray_background.png
+Assets\image_back.jpg
 Assets\Logo.scale-240.png
 Assets\SmallLogo.scale-240.png
 Assets\SplashScreen.scale-240.png
@@ -13,6 +14,7 @@ Pages\MainPage.xbf
 Pages\MyAdsPage.xbf
 Pages\RegisterPage.xbf
 Pages\SearchPage.xbf
+Pages\SuccessUploadPage.xbf
 Pages\UploadAdPage.xbf
 Pages\UploadAdSecondPage.xbf
 Pages\WrongLoginPage.xbf

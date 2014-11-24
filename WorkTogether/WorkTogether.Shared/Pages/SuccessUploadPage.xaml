@@ -1,0 +1,96 @@
+﻿<Page
+    x:Class="WorkTogether.Pages.SuccessUploadPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WorkTogether.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton x:Name="Add" Label="Add" Icon="Add" Click="OnAddAnotherAdButtonClick"/>
+                <AppBarButton x:Name="SelectAll" Label="Favourites" Icon="SelectAll" Click="OnSeeFavouritesButtonClick"/>
+                <AppBarButton x:Name="GotoMain" Label="Favourites" Icon="GoToStart"  Click="OnGotoMainPageButtonClick"/>
+                <!--<AppBarButton x:Name="Clear" Label="Clear" Icon="Clear" />
+                <AppBarButton x:Name="Delete" Label="Delete" Icon="Delete" />-->
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+    <Grid x:Name="LayoutRoot"
+          Style="{StaticResource background_image}">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="{StaticResource AppName}" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <!--<TextBlock Text="" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>-->
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <!--<TextBlock Text="Please try again"   
+                           Grid.Row="0"
+                           Grid.Column="1"
+                	FontSize="32"
+                           Margin="0,50,-0.333,19"
+                	FontFamily="Segoe UI" 
+                	FontWeight="Light" />-->
+                <TextBlock Text="upload successfully" 
+                           Grid.Row="1"
+                           Grid.ColumnSpan="2"
+                           FontSize="28"
+                           FontFamily="Segoe UI" 
+                           FontWeight="Light" 
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"/>
+                <Button Content="Add another" 
+                        Click="OnAddAnotherAdButtonClick"
+                        Grid.Column="1" 
+                        HorizontalAlignment="Left" 
+                        Margin="31,402,0,0" 
+                        Grid.Row="1" VerticalAlignment="Top"
+                        Height="70" 
+                        Width="128"/>
+                <Button Content="See favourites" 
+                        Click="OnSeeFavouritesButtonClick"
+                        Grid.Column="1"
+                        HorizontalAlignment="Left" 
+                        Margin="532,405,0,0"
+                        Grid.Row="1" 
+                        VerticalAlignment="Top" 
+                        Height="70" 
+                        Width="128"/>
+                <Button Content="Main page"
+                        Click="OnGoToMainPageButtonClick"
+                        Grid.Column="1" 
+                        HorizontalAlignment="Left" 
+                        Margin="269,405,0,0" 
+                        Grid.Row="1"
+                        VerticalAlignment="Top" 
+                        Height="70"
+                        Width="128"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

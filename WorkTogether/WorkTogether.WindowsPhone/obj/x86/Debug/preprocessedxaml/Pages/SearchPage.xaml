@@ -1,0 +1,56 @@
+﻿<Page x:Class="WorkTogether.Pages.SearchPage" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="using:WorkTogether.Pages" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot" Style="{StaticResource background_image}">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition />
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="{StaticResource AppName}" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0" />
+            
+            <TextBlock Text="jobs available" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" />
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+
+            <!--<ListView ItemsSource="{Binding Ads}"
+                      SelectionChanged="OnItemClick"
+                      SelectionMode="Single"
+                      ItemTemplate="{StaticResource AdTemplate}"/>-->
+            <ListView ItemsSource="{Binding Ads}" SelectionChanged="OnItemClick" SelectionMode="Single">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Row="0" Margin="0 0 15 0" Style="{StaticResource BaseTextBlockStyle}" Grid.Column="0" Text="Title:" HorizontalAlignment="Right" FontWeight="Bold" />
+                            <TextBlock Grid.Row="0" Style="{StaticResource BaseTextBlockStyle}" Grid.Column="1" Text="{Binding Title}" HorizontalAlignment="Left" FontWeight="Bold" />
+
+                            <TextBlock Grid.Row="1" Margin="0 0 20 10" Grid.Column="0" Style="{StaticResource BaseTextBlockStyle}" Text="Town:" HorizontalAlignment="Right" FontWeight="Bold" />
+                            <TextBlock Grid.Row="1" Margin="0 0 20 10" Grid.Column="1" Style="{StaticResource BaseTextBlockStyle}" Text="{Binding Town}" HorizontalAlignment="Left" FontWeight="Bold" />
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+        <ProgressRing HorizontalAlignment="Left" Background="Transparent" IsActive="{Binding Initializing}" Margin="185,198.833,0,0" Grid.Row="1" VerticalAlignment="Top" />
+        
+
+    </Grid>
+</Page>

@@ -1,32 +1,21 @@
-﻿<Page
-    x:Class="WorkTogether.Pages.UploadAdPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:WorkTogether.Pages"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:views="using:WorkTogether.Views"
-    xmlns:converters="using:WorkTogether.Converters"
-    mc:Ignorable="d"
-    
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    
+﻿<Page x:Class="WorkTogether.Pages.UploadAdPage" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="using:WorkTogether.Pages" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:views="using:WorkTogether.Views" xmlns:converters="using:WorkTogether.Converters" mc:Ignorable="d" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
 
     <Page.Resources>
-        <converters:DateTimeToStringConverter x:Key="StringConverter" />        
+        <converters:DateTimeToStringConverter x:Key="StringConverter" />
     </Page.Resources>
-    <Grid>
+    <Grid Style="{StaticResource background_image}">
 
-        
+
         <Grid.ChildrenTransitions>
             <TransitionCollection>
-                <EntranceThemeTransition/>
+                <EntranceThemeTransition />
             </TransitionCollection>
         </Grid.ChildrenTransitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <!-- Title Panel -->
@@ -34,54 +23,34 @@
             <TextBlock Text="MY APPLICATION" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
             <TextBlock Text="page title" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}"/>
         </StackPanel>-->
-        
+
         <!--Working-->
-        <views:HeaderView x:ConnectionId='1' Grid.Row="0"
-                          TitleText="Post a job"                          
-                                             
-                          Margin="19,0,0,0"/>
+        <views:HeaderView x:ConnectionId='1' Grid.Row="0" TitleText="Upload job"                     Margin="19,0,0,0" />
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0"
-                       Style="{StaticResource loginPageTextBlock}"
-                       Name="Title"
-                       Text="Title"/>
-            <TextBox Text="{Binding Title, Mode=TwoWay}"
-                     Grid.Row="1"/>
-            <TextBlock Grid.Row="2"
-                       Style="{StaticResource loginPageTextBlock}"
-                       Name="Description"
-                       Text="Description"/>
-            <TextBox Grid.Row="3"
-                     Text="{Binding Description, Mode=TwoWay}"/>
-            <TextBlock Grid.Row="4"
-                       Style="{StaticResource loginPageTextBlock}"
-                       Name="Town"
-                       Text="Town"/>
-            <TextBox Grid.Row="5"
-                     Text="{Binding Town, Mode=TwoWay}"/>
-            <TextBlock Grid.Row="6"
-                       Style="{StaticResource loginPageTextBlock}"
-                       Text="Choose date"/>
-            <DatePicker Name="DatePicker"                        
-                        Date="{Binding DateOfEvent, Mode=TwoWay}"
-                        Grid.Row="7"/>
-            <Button x:ConnectionId='2' Grid.Row="8"
-                    HorizontalAlignment="Center"
-                                                 
-                    Content="Create"/>
+            <TextBlock Grid.Row="0" Style="{StaticResource loginPageTextBlock}" Name="Title" Text="Title" />
+            <TextBox Text="{Binding Title, Mode=TwoWay}" Grid.Row="1" />
+            <TextBlock Grid.Row="2" Style="{StaticResource loginPageTextBlock}" Name="Description" Text="Description" />
+            <TextBox Grid.Row="3" Text="{Binding Description, Mode=TwoWay}" />
+            <TextBlock Grid.Row="4" Style="{StaticResource loginPageTextBlock}" Name="Town" Text="Town" />
+            <TextBox Grid.Row="5" Text="{Binding Town, Mode=TwoWay}" />
+            <TextBlock Grid.Row="6" Style="{StaticResource loginPageTextBlock}" Text="Choose date" />
+            <DatePicker Name="DatePicker" Date="{Binding DateOfEvent, Mode=TwoWay}" Grid.Row="7" />
+            
+            <Button x:ConnectionId='2' Grid.Row="8" HorizontalAlignment="Center"                               Content="Create" Margin="540,7.5,698,6.5" Height="55" Width="90" />
+            <Button x:ConnectionId='3' Content="Back"                              HorizontalAlignment="Left" Margin="718,8.5,0,0" Grid.Row="8" VerticalAlignment="Top" Height="55" Width="90" />
         </Grid>
     </Grid>
 </Page>
